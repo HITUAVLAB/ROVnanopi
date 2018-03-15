@@ -1,0 +1,3 @@
+/home/duan/ROVnanopi/build/CMakeFiles/edit_cache.dir
+/home/duan/ROVnanopi/build/CMakeFiles/ROVnanopi.dir
+/home/duan/ROVnanopi/build/CMakeFiles/rebuild_cache.dir

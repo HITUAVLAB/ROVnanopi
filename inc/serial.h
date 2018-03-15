@@ -40,7 +40,7 @@ class serial
 	
 	public:
 		
-		char Open(char* port, int baud, char bits, parity parity, char stopbit);
+        char Open(char const* port, int baud, char bits, parity parity, char stopbit);
 		void Close(void);
 		char Write(char* buffer, int length);
 		int Read(char* buffer);

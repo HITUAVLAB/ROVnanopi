@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <time.h>
+#include <pthread.h>
 #if (defined __QNX__) | (defined __QNXNTO__)
 /* QNX specific headers */
 #include <unix.h>

@@ -1,4 +1,0 @@
-/root/test/udp-image-streaming/debug/CMakeFiles/rebuild_cache.dir
-/root/test/udp-image-streaming/debug/CMakeFiles/edit_cache.dir
-/root/test/udp-image-streaming/debug/CMakeFiles/client.dir
-/root/test/udp-image-streaming/debug/CMakeFiles/server.dir

@@ -155,7 +155,7 @@
 
 #else
 
-	char serial::Open(char* port, int baud, char bits, parity parity, char stopbit) 
+    char serial::Open(char const* port, int baud, char bits, parity parity, char stopbit)
 	{
 		char tmp[BUFFER_SIZE];
 		

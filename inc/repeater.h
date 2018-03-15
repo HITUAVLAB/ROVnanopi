@@ -4,7 +4,7 @@
 #include <iostream>
 #include <pthread.h>
 #include "../inc/serial.h"
-#include "../src/mavlink/common/mavlink.h"
+#include "../inc/mavlink/common/mavlink.h"
 
 
 #include <errno.h>

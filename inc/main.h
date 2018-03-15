@@ -7,7 +7,7 @@
 #include "repeater.h"     //the repeater class
 #include "serial.h"       //the serial port operation class
 #include "init.h"         //init function for the nanopi
-#include "pthread.h"      //pthread operation
+#include "threadControl.h"      //pthread operation
 #include "help.h"
 extern Repeater repeater;
 

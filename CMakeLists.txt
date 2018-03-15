@@ -1,13 +1,22 @@
-cmake_minimum_required(VERSION 3.5.1)
+cmake_minimum_required(VERSION 2.8)
 
-project(ROVNANOPI)
+set(ROVnanopi_VERSION_MAJOR 1)
+set(ROVnanopi_VERSION_MINOR 0)
 
-aux_source_directory(. DIRSRCS)
+#SET(CMAKE_CXX_COMPILER "/usr/bin/g++-5")
 
-include_directories(./ ./inc )
+project(ROVnanopi CXX)
 
-add_subdirectory(./src)
+SET(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} "-std=c++11 -pthread")
+find_package (Threads)
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lpthread")
 
-add_executable(ROVnanopi ${DIRSRCS})
+INCLUDE_DIRECTORIES(inc)
+#INCLUDE_DIRECTORIES(usr/local/include)
+INCLUDE_DIRECTORIES(usr/include)
+AUX_SOURCE_DIRECTORY(src DIR_SRCS)
 
-target_link_libraries(ROVnanopi src)
+add_executable(${PROJECT_NAME} ${DIR_SRCS} )
+
+target_link_libraries (ROVnanopi ${CMAKE_THREAD_LIBS_INIT})
+
