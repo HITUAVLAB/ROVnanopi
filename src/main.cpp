@@ -1,36 +1,30 @@
 #include <stdio.h>
-#include "../inc/main.h"
+#include "main.h"
 #include "mavlink/common/mavlink.h"    //mavlink头文件
 
-#include <errno.h>
-#include <string.h>
-#include <sys/socket.h>
-#include <sys/types.h>
-#include <netinet/in.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <time.h>
-#if (defined __QNX__) | (defined __QNXNTO__)
-/* QNX specific headers */
-#include <unix.h>
-#else
-/* Linux / MacOS POSIX timer headers */
-#include <sys/time.h>
-#include <time.h>
-#include <arpa/inet.h>
-#include <stdbool.h> /* required for the definition of bool in C99 */
-#endif
-
-/*线程相关头文件*/
-#include <pthread.h>
+static volatile int keepRunning = 1;
 
 uint64_t microsSinceEpoch();
 
 Repeater repeater;
 
+/*receive the ctrl + c interupt signal, stop the main thread*/
+void sig_handler( int sig )
+{
+    if ( sig == SIGINT)
+    {
+        keepRunning = 0;
+    }
+}
+
 int main(int argc, char** argv)
 {
+    std::cout << "Starting the ROV groundstation" << std::endl;
+    signal( SIGINT, sig_handler );
+
+    UpThread u;
+    DownThread d;
+
 	/*print help information*/
 	help(argc,argv);
 
@@ -39,10 +33,18 @@ int main(int argc, char** argv)
 	 *create the pthread */
 	init();
 
-	while(1)
-	{
-		sleep(500);
-	}
+    u.startSystem();
+    d.startSystem();
+
+    while(keepRunning)
+    {
+        std::cout <<"running"<<std::endl;
+        sleep(1);
+    }
+    std::cout << "end the program" << std::endl;
+
+    u.stopSystem();
+    d.stopSystem();
 	//pthread_join(MBtoGS_thread,NULL);	
 	//pthread_join(GStoMB_thread,NULL);
 	//repeater.Close();

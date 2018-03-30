@@ -155,6 +155,15 @@
 
 #else
 
+serial::serial(void){
+
+}
+
+serial::~serial(void){
+    Close();
+    printf("closed the serial port");
+}
+
     char serial::Open(char const* port, int baud, char bits, parity parity, char stopbit)
 	{
 		char tmp[BUFFER_SIZE];

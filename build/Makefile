@@ -150,6 +150,60 @@ src/PracticalSocket.cpp.s:
 	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/PracticalSocket.cpp.s
 .PHONY : src/PracticalSocket.cpp.s
 
+src/cameraThread.o: src/cameraThread.cpp.o
+
+.PHONY : src/cameraThread.o
+
+# target to build an object file
+src/cameraThread.cpp.o:
+	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/cameraThread.cpp.o
+.PHONY : src/cameraThread.cpp.o
+
+src/cameraThread.i: src/cameraThread.cpp.i
+
+.PHONY : src/cameraThread.i
+
+# target to preprocess a source file
+src/cameraThread.cpp.i:
+	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/cameraThread.cpp.i
+.PHONY : src/cameraThread.cpp.i
+
+src/cameraThread.s: src/cameraThread.cpp.s
+
+.PHONY : src/cameraThread.s
+
+# target to generate assembly for a file
+src/cameraThread.cpp.s:
+	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/cameraThread.cpp.s
+.PHONY : src/cameraThread.cpp.s
+
+src/downThread.o: src/downThread.cpp.o
+
+.PHONY : src/downThread.o
+
+# target to build an object file
+src/downThread.cpp.o:
+	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/downThread.cpp.o
+.PHONY : src/downThread.cpp.o
+
+src/downThread.i: src/downThread.cpp.i
+
+.PHONY : src/downThread.i
+
+# target to preprocess a source file
+src/downThread.cpp.i:
+	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/downThread.cpp.i
+.PHONY : src/downThread.cpp.i
+
+src/downThread.s: src/downThread.cpp.s
+
+.PHONY : src/downThread.s
+
+# target to generate assembly for a file
+src/downThread.cpp.s:
+	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/downThread.cpp.s
+.PHONY : src/downThread.cpp.s
+
 src/help.o: src/help.cpp.o
 
 .PHONY : src/help.o
@@ -285,6 +339,33 @@ src/serial.cpp.s:
 	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/serial.cpp.s
 .PHONY : src/serial.cpp.s
 
+src/thread.o: src/thread.cpp.o
+
+.PHONY : src/thread.o
+
+# target to build an object file
+src/thread.cpp.o:
+	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/thread.cpp.o
+.PHONY : src/thread.cpp.o
+
+src/thread.i: src/thread.cpp.i
+
+.PHONY : src/thread.i
+
+# target to preprocess a source file
+src/thread.cpp.i:
+	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/thread.cpp.i
+.PHONY : src/thread.cpp.i
+
+src/thread.s: src/thread.cpp.s
+
+.PHONY : src/thread.s
+
+# target to generate assembly for a file
+src/thread.cpp.s:
+	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/thread.cpp.s
+.PHONY : src/thread.cpp.s
+
 src/threadControl.o: src/threadControl.cpp.o
 
 .PHONY : src/threadControl.o
@@ -339,6 +420,33 @@ src/timeout.cpp.s:
 	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/timeout.cpp.s
 .PHONY : src/timeout.cpp.s
 
+src/upThread.o: src/upThread.cpp.o
+
+.PHONY : src/upThread.o
+
+# target to build an object file
+src/upThread.cpp.o:
+	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/upThread.cpp.o
+.PHONY : src/upThread.cpp.o
+
+src/upThread.i: src/upThread.cpp.i
+
+.PHONY : src/upThread.i
+
+# target to preprocess a source file
+src/upThread.cpp.i:
+	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/upThread.cpp.i
+.PHONY : src/upThread.cpp.i
+
+src/upThread.s: src/upThread.cpp.s
+
+.PHONY : src/upThread.s
+
+# target to generate assembly for a file
+src/upThread.cpp.s:
+	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/upThread.cpp.s
+.PHONY : src/upThread.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -351,6 +459,12 @@ help:
 	@echo "... src/PracticalSocket.o"
 	@echo "... src/PracticalSocket.i"
 	@echo "... src/PracticalSocket.s"
+	@echo "... src/cameraThread.o"
+	@echo "... src/cameraThread.i"
+	@echo "... src/cameraThread.s"
+	@echo "... src/downThread.o"
+	@echo "... src/downThread.i"
+	@echo "... src/downThread.s"
 	@echo "... src/help.o"
 	@echo "... src/help.i"
 	@echo "... src/help.s"
@@ -366,12 +480,18 @@ help:
 	@echo "... src/serial.o"
 	@echo "... src/serial.i"
 	@echo "... src/serial.s"
+	@echo "... src/thread.o"
+	@echo "... src/thread.i"
+	@echo "... src/thread.s"
 	@echo "... src/threadControl.o"
 	@echo "... src/threadControl.i"
 	@echo "... src/threadControl.s"
 	@echo "... src/timeout.o"
 	@echo "... src/timeout.i"
 	@echo "... src/timeout.s"
+	@echo "... src/upThread.o"
+	@echo "... src/upThread.i"
+	@echo "... src/upThread.s"
 .PHONY : help
 
 

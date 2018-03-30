@@ -4,6 +4,16 @@
 CMakeFiles/ROVnanopi.dir/src/PracticalSocket.cpp.o: ../inc/PracticalSocket.h
 CMakeFiles/ROVnanopi.dir/src/PracticalSocket.cpp.o: ../src/PracticalSocket.cpp
 
+CMakeFiles/ROVnanopi.dir/src/cameraThread.cpp.o: ../inc/cameraThread.h
+CMakeFiles/ROVnanopi.dir/src/cameraThread.cpp.o: ../inc/runnable.h
+CMakeFiles/ROVnanopi.dir/src/cameraThread.cpp.o: ../inc/thread.h
+CMakeFiles/ROVnanopi.dir/src/cameraThread.cpp.o: ../src/cameraThread.cpp
+
+CMakeFiles/ROVnanopi.dir/src/downThread.cpp.o: ../inc/downThread.h
+CMakeFiles/ROVnanopi.dir/src/downThread.cpp.o: ../inc/runnable.h
+CMakeFiles/ROVnanopi.dir/src/downThread.cpp.o: ../inc/thread.h
+CMakeFiles/ROVnanopi.dir/src/downThread.cpp.o: ../src/downThread.cpp
+
 CMakeFiles/ROVnanopi.dir/src/help.cpp.o: ../src/help.cpp
 
 CMakeFiles/ROVnanopi.dir/src/init.cpp.o: ../inc/help.h
@@ -185,6 +195,10 @@ CMakeFiles/ROVnanopi.dir/src/init.cpp.o: ../inc/serial.h
 CMakeFiles/ROVnanopi.dir/src/init.cpp.o: ../inc/threadControl.h
 CMakeFiles/ROVnanopi.dir/src/init.cpp.o: ../src/init.cpp
 
+CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/downThread.h
+CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/help.h
+CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/init.h
+CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/main.h
 CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/mavlink/checksum.h
 CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/mavlink/common/./mavlink_msg_actuator_control_target.h
 CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/mavlink/common/./mavlink_msg_adsb_vehicle.h
@@ -356,13 +370,12 @@ CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/mavlink/mavlink_helpers.h
 CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/mavlink/mavlink_sha256.h
 CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/mavlink/mavlink_types.h
 CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/mavlink/protocol.h
-CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/help.h
-CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/init.h
-CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/main.h
-CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/mavlink/common/mavlink.h
 CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/repeater.h
+CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/runnable.h
 CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/serial.h
+CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/thread.h
 CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/threadControl.h
+CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/upThread.h
 CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../src/main.cpp
 
 CMakeFiles/ROVnanopi.dir/src/repeater.cpp.o: ../inc/mavlink/checksum.h
@@ -543,6 +556,10 @@ CMakeFiles/ROVnanopi.dir/src/repeater.cpp.o: ../src/repeater.cpp
 CMakeFiles/ROVnanopi.dir/src/serial.cpp.o: ../inc/serial.h
 CMakeFiles/ROVnanopi.dir/src/serial.cpp.o: ../inc/timeout.h
 CMakeFiles/ROVnanopi.dir/src/serial.cpp.o: ../src/serial.cpp
+
+CMakeFiles/ROVnanopi.dir/src/thread.cpp.o: ../inc/runnable.h
+CMakeFiles/ROVnanopi.dir/src/thread.cpp.o: ../inc/thread.h
+CMakeFiles/ROVnanopi.dir/src/thread.cpp.o: ../src/thread.cpp
 
 CMakeFiles/ROVnanopi.dir/src/threadControl.cpp.o: ../inc/PracticalSocket.h
 CMakeFiles/ROVnanopi.dir/src/threadControl.cpp.o: ../inc/help.h
@@ -726,4 +743,10 @@ CMakeFiles/ROVnanopi.dir/src/threadControl.cpp.o: ../src/threadControl.cpp
 
 CMakeFiles/ROVnanopi.dir/src/timeout.cpp.o: ../inc/timeout.h
 CMakeFiles/ROVnanopi.dir/src/timeout.cpp.o: ../src/timeout.cpp
+
+CMakeFiles/ROVnanopi.dir/src/upThread.cpp.o: ../inc/cameraThread.h
+CMakeFiles/ROVnanopi.dir/src/upThread.cpp.o: ../inc/runnable.h
+CMakeFiles/ROVnanopi.dir/src/upThread.cpp.o: ../inc/thread.h
+CMakeFiles/ROVnanopi.dir/src/upThread.cpp.o: ../inc/upThread.h
+CMakeFiles/ROVnanopi.dir/src/upThread.cpp.o: ../src/upThread.cpp
 

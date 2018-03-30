@@ -39,6 +39,8 @@ class serial
 
 	
 	public:
+        serial();
+        virtual ~serial();
 		
         char Open(char const* port, int baud, char bits, parity parity, char stopbit);
 		void Close(void);
