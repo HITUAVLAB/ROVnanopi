@@ -37,21 +37,22 @@ void UpThread::run(){
 #endif
         pthread_mutex_lock(&mut);
 #ifdef DEBUG
-	printf("Start reading\n");
+        printf("Start reading\n");
 #endif
         repeater.setLength( repeater.Read(repeater.getBuf()) );     //length is the byte the uart read
+        printf("length is %d",repeater.getLength());
         if(repeater.getLength()){                                   //buf is not empty
             for(int i = 0; i < repeater.getLength(); i++){
 #ifdef DEBUG
-		std::cout << "bytes received" << std::endl;
-		printf("%.2X ",repeater.getBuf()[i]);
+            std::cout << "bytes received" << std::endl;
+            printf("%.2X ",repeater.getBuf()[i]);
 #endif            
-		if (mavlink_parse_char(MAVLINK_COMM_0, repeater.getBuf()[i], repeater.getMavlinkMsg(), repeater.getMavlinkStatus() )){
-                        //bytes_sent = sendto(sock, repeater.getBuf(), repeater.getLength(), 0, (struct sockaddr*)&gcAddr, sizeof(struct sockaddr_in));
-                        printf("mavlink message received\n");
-                        printf("the message ID is: %d",repeater.getMavlinkMsg()->msgid);
-                }
+            if (mavlink_parse_char(MAVLINK_COMM_0, repeater.getBuf()[i], repeater.getMavlinkMsg(), repeater.getMavlinkStatus() )){
+                //bytes_sent = sendto(sock, repeater.getBuf(), repeater.getLength(), 0, (struct sockaddr*)&gcAddr, sizeof(struct sockaddr_in));
+                printf("mavlink message received\n");
+                printf("the message ID is: %d",repeater.getMavlinkMsg()->msgid);
             }
+        }
 #ifdef DEBUG
             printf("%d\n",repeater.getLength());
 #endif        
