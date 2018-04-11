@@ -123,140 +123,70 @@ ROVnanopi/fast:
 	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/build
 .PHONY : ROVnanopi/fast
 
-src/PracticalSocket.o: src/PracticalSocket.cpp.o
+#=============================================================================
+# Target rules for targets named init
 
-.PHONY : src/PracticalSocket.o
+# Build rule for target.
+init: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 init
+.PHONY : init
 
-# target to build an object file
-src/PracticalSocket.cpp.o:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/PracticalSocket.cpp.o
-.PHONY : src/PracticalSocket.cpp.o
+# fast build rule for target.
+init/fast:
+	$(MAKE) -f src/init/CMakeFiles/init.dir/build.make src/init/CMakeFiles/init.dir/build
+.PHONY : init/fast
 
-src/PracticalSocket.i: src/PracticalSocket.cpp.i
+#=============================================================================
+# Target rules for targets named comm
 
-.PHONY : src/PracticalSocket.i
+# Build rule for target.
+comm: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 comm
+.PHONY : comm
 
-# target to preprocess a source file
-src/PracticalSocket.cpp.i:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/PracticalSocket.cpp.i
-.PHONY : src/PracticalSocket.cpp.i
+# fast build rule for target.
+comm/fast:
+	$(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/build
+.PHONY : comm/fast
 
-src/PracticalSocket.s: src/PracticalSocket.cpp.s
+#=============================================================================
+# Target rules for targets named thread
 
-.PHONY : src/PracticalSocket.s
+# Build rule for target.
+thread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thread
+.PHONY : thread
 
-# target to generate assembly for a file
-src/PracticalSocket.cpp.s:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/PracticalSocket.cpp.s
-.PHONY : src/PracticalSocket.cpp.s
+# fast build rule for target.
+thread/fast:
+	$(MAKE) -f src/thread/CMakeFiles/thread.dir/build.make src/thread/CMakeFiles/thread.dir/build
+.PHONY : thread/fast
 
-src/cameraThread.o: src/cameraThread.cpp.o
+#=============================================================================
+# Target rules for targets named videostream
 
-.PHONY : src/cameraThread.o
+# Build rule for target.
+videostream: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 videostream
+.PHONY : videostream
 
-# target to build an object file
-src/cameraThread.cpp.o:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/cameraThread.cpp.o
-.PHONY : src/cameraThread.cpp.o
+# fast build rule for target.
+videostream/fast:
+	$(MAKE) -f src/videostream/CMakeFiles/videostream.dir/build.make src/videostream/CMakeFiles/videostream.dir/build
+.PHONY : videostream/fast
 
-src/cameraThread.i: src/cameraThread.cpp.i
+#=============================================================================
+# Target rules for targets named repeater
 
-.PHONY : src/cameraThread.i
+# Build rule for target.
+repeater: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 repeater
+.PHONY : repeater
 
-# target to preprocess a source file
-src/cameraThread.cpp.i:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/cameraThread.cpp.i
-.PHONY : src/cameraThread.cpp.i
-
-src/cameraThread.s: src/cameraThread.cpp.s
-
-.PHONY : src/cameraThread.s
-
-# target to generate assembly for a file
-src/cameraThread.cpp.s:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/cameraThread.cpp.s
-.PHONY : src/cameraThread.cpp.s
-
-src/downThread.o: src/downThread.cpp.o
-
-.PHONY : src/downThread.o
-
-# target to build an object file
-src/downThread.cpp.o:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/downThread.cpp.o
-.PHONY : src/downThread.cpp.o
-
-src/downThread.i: src/downThread.cpp.i
-
-.PHONY : src/downThread.i
-
-# target to preprocess a source file
-src/downThread.cpp.i:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/downThread.cpp.i
-.PHONY : src/downThread.cpp.i
-
-src/downThread.s: src/downThread.cpp.s
-
-.PHONY : src/downThread.s
-
-# target to generate assembly for a file
-src/downThread.cpp.s:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/downThread.cpp.s
-.PHONY : src/downThread.cpp.s
-
-src/help.o: src/help.cpp.o
-
-.PHONY : src/help.o
-
-# target to build an object file
-src/help.cpp.o:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/help.cpp.o
-.PHONY : src/help.cpp.o
-
-src/help.i: src/help.cpp.i
-
-.PHONY : src/help.i
-
-# target to preprocess a source file
-src/help.cpp.i:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/help.cpp.i
-.PHONY : src/help.cpp.i
-
-src/help.s: src/help.cpp.s
-
-.PHONY : src/help.s
-
-# target to generate assembly for a file
-src/help.cpp.s:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/help.cpp.s
-.PHONY : src/help.cpp.s
-
-src/init.o: src/init.cpp.o
-
-.PHONY : src/init.o
-
-# target to build an object file
-src/init.cpp.o:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/init.cpp.o
-.PHONY : src/init.cpp.o
-
-src/init.i: src/init.cpp.i
-
-.PHONY : src/init.i
-
-# target to preprocess a source file
-src/init.cpp.i:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/init.cpp.i
-.PHONY : src/init.cpp.i
-
-src/init.s: src/init.cpp.s
-
-.PHONY : src/init.s
-
-# target to generate assembly for a file
-src/init.cpp.s:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/init.cpp.s
-.PHONY : src/init.cpp.s
+# fast build rule for target.
+repeater/fast:
+	$(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/build
+.PHONY : repeater/fast
 
 src/main.o: src/main.cpp.o
 
@@ -285,168 +215,6 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/repeater.o: src/repeater.cpp.o
-
-.PHONY : src/repeater.o
-
-# target to build an object file
-src/repeater.cpp.o:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/repeater.cpp.o
-.PHONY : src/repeater.cpp.o
-
-src/repeater.i: src/repeater.cpp.i
-
-.PHONY : src/repeater.i
-
-# target to preprocess a source file
-src/repeater.cpp.i:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/repeater.cpp.i
-.PHONY : src/repeater.cpp.i
-
-src/repeater.s: src/repeater.cpp.s
-
-.PHONY : src/repeater.s
-
-# target to generate assembly for a file
-src/repeater.cpp.s:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/repeater.cpp.s
-.PHONY : src/repeater.cpp.s
-
-src/serial.o: src/serial.cpp.o
-
-.PHONY : src/serial.o
-
-# target to build an object file
-src/serial.cpp.o:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/serial.cpp.o
-.PHONY : src/serial.cpp.o
-
-src/serial.i: src/serial.cpp.i
-
-.PHONY : src/serial.i
-
-# target to preprocess a source file
-src/serial.cpp.i:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/serial.cpp.i
-.PHONY : src/serial.cpp.i
-
-src/serial.s: src/serial.cpp.s
-
-.PHONY : src/serial.s
-
-# target to generate assembly for a file
-src/serial.cpp.s:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/serial.cpp.s
-.PHONY : src/serial.cpp.s
-
-src/thread.o: src/thread.cpp.o
-
-.PHONY : src/thread.o
-
-# target to build an object file
-src/thread.cpp.o:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/thread.cpp.o
-.PHONY : src/thread.cpp.o
-
-src/thread.i: src/thread.cpp.i
-
-.PHONY : src/thread.i
-
-# target to preprocess a source file
-src/thread.cpp.i:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/thread.cpp.i
-.PHONY : src/thread.cpp.i
-
-src/thread.s: src/thread.cpp.s
-
-.PHONY : src/thread.s
-
-# target to generate assembly for a file
-src/thread.cpp.s:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/thread.cpp.s
-.PHONY : src/thread.cpp.s
-
-src/threadControl.o: src/threadControl.cpp.o
-
-.PHONY : src/threadControl.o
-
-# target to build an object file
-src/threadControl.cpp.o:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/threadControl.cpp.o
-.PHONY : src/threadControl.cpp.o
-
-src/threadControl.i: src/threadControl.cpp.i
-
-.PHONY : src/threadControl.i
-
-# target to preprocess a source file
-src/threadControl.cpp.i:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/threadControl.cpp.i
-.PHONY : src/threadControl.cpp.i
-
-src/threadControl.s: src/threadControl.cpp.s
-
-.PHONY : src/threadControl.s
-
-# target to generate assembly for a file
-src/threadControl.cpp.s:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/threadControl.cpp.s
-.PHONY : src/threadControl.cpp.s
-
-src/timeout.o: src/timeout.cpp.o
-
-.PHONY : src/timeout.o
-
-# target to build an object file
-src/timeout.cpp.o:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/timeout.cpp.o
-.PHONY : src/timeout.cpp.o
-
-src/timeout.i: src/timeout.cpp.i
-
-.PHONY : src/timeout.i
-
-# target to preprocess a source file
-src/timeout.cpp.i:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/timeout.cpp.i
-.PHONY : src/timeout.cpp.i
-
-src/timeout.s: src/timeout.cpp.s
-
-.PHONY : src/timeout.s
-
-# target to generate assembly for a file
-src/timeout.cpp.s:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/timeout.cpp.s
-.PHONY : src/timeout.cpp.s
-
-src/upThread.o: src/upThread.cpp.o
-
-.PHONY : src/upThread.o
-
-# target to build an object file
-src/upThread.cpp.o:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/upThread.cpp.o
-.PHONY : src/upThread.cpp.o
-
-src/upThread.i: src/upThread.cpp.i
-
-.PHONY : src/upThread.i
-
-# target to preprocess a source file
-src/upThread.cpp.i:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/upThread.cpp.i
-.PHONY : src/upThread.cpp.i
-
-src/upThread.s: src/upThread.cpp.s
-
-.PHONY : src/upThread.s
-
-# target to generate assembly for a file
-src/upThread.cpp.s:
-	$(MAKE) -f CMakeFiles/ROVnanopi.dir/build.make CMakeFiles/ROVnanopi.dir/src/upThread.cpp.s
-.PHONY : src/upThread.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -456,42 +224,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... ROVnanopi"
 	@echo "... rebuild_cache"
-	@echo "... src/PracticalSocket.o"
-	@echo "... src/PracticalSocket.i"
-	@echo "... src/PracticalSocket.s"
-	@echo "... src/cameraThread.o"
-	@echo "... src/cameraThread.i"
-	@echo "... src/cameraThread.s"
-	@echo "... src/downThread.o"
-	@echo "... src/downThread.i"
-	@echo "... src/downThread.s"
-	@echo "... src/help.o"
-	@echo "... src/help.i"
-	@echo "... src/help.s"
-	@echo "... src/init.o"
-	@echo "... src/init.i"
-	@echo "... src/init.s"
+	@echo "... init"
+	@echo "... comm"
+	@echo "... thread"
+	@echo "... videostream"
+	@echo "... repeater"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/repeater.o"
-	@echo "... src/repeater.i"
-	@echo "... src/repeater.s"
-	@echo "... src/serial.o"
-	@echo "... src/serial.i"
-	@echo "... src/serial.s"
-	@echo "... src/thread.o"
-	@echo "... src/thread.i"
-	@echo "... src/thread.s"
-	@echo "... src/threadControl.o"
-	@echo "... src/threadControl.i"
-	@echo "... src/threadControl.s"
-	@echo "... src/timeout.o"
-	@echo "... src/timeout.i"
-	@echo "... src/timeout.s"
-	@echo "... src/upThread.o"
-	@echo "... src/upThread.i"
-	@echo "... src/upThread.s"
 .PHONY : help
 
 

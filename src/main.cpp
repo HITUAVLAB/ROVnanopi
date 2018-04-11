@@ -19,7 +19,9 @@ void sig_handler( int sig )
 
 int main(int argc, char** argv)
 {
-    std::cout << "Starting the ROV groundstation" << std::endl;
+#ifdef DEBUG
+    std::cout << "Starting the ROV groundstation, this is the debug release" << std::endl;
+#endif
     signal( SIGINT, sig_handler );
 
     UpThread u;

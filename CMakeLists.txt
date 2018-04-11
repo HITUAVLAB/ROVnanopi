@@ -7,6 +7,13 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 project(ROVnanopi CXX)
 
+#set(CMAKE_BUILD_TYPE "Release")
+set(CMAKE_BUILD_TYPE "Debug")
+
+IF (CMAKE_BUILD_TYPE STREQUAL Debug)
+    ADD_DEFINITIONS(-DDEBUG)
+ENDIF()
+
 SET(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} "-std=c++11 -pthread")
 find_package (Threads)
 
@@ -17,6 +24,7 @@ INCLUDE_DIRECTORIES(
     inc/repeater
     inc/videostream
     inc/comm
+    inc/projectdebug
 
     #mavlink include directory
     inc/mavlink/ROV

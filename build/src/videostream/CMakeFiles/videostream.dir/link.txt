@@ -1,0 +1,2 @@
+/usr/bin/ar qc libvideostream.a  CMakeFiles/videostream.dir/cameraThread.cpp.o
+/usr/bin/ranlib libvideostream.a

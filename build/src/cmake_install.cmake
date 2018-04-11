@@ -32,3 +32,13 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/home/duan/ROVnanopi/build/src/init/cmake_install.cmake")
+  include("/home/duan/ROVnanopi/build/src/comm/cmake_install.cmake")
+  include("/home/duan/ROVnanopi/build/src/thread/cmake_install.cmake")
+  include("/home/duan/ROVnanopi/build/src/videostream/cmake_install.cmake")
+  include("/home/duan/ROVnanopi/build/src/repeater/cmake_install.cmake")
+
+endif()
+

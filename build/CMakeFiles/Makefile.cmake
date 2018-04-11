@@ -13,6 +13,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/feature_tests.cxx"
   "../inc/CMakeLists.txt"
   "../src/CMakeLists.txt"
+  "../src/comm/CMakeLists.txt"
+  "../src/init/CMakeLists.txt"
+  "../src/repeater/CMakeLists.txt"
+  "../src/thread/CMakeLists.txt"
+  "../src/videostream/CMakeLists.txt"
   "/usr/share/cmake-3.5/Modules/CMakeCXXCompiler.cmake.in"
   "/usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp"
   "/usr/share/cmake-3.5/Modules/CMakeCXXInformation.cmake"
@@ -97,10 +102,20 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.5.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/init/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/comm/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/thread/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/videostream/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/repeater/CMakeFiles/CMakeDirectoryInformation.cmake"
   "inc/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ROVnanopi.dir/DependInfo.cmake"
+  "src/init/CMakeFiles/init.dir/DependInfo.cmake"
+  "src/comm/CMakeFiles/comm.dir/DependInfo.cmake"
+  "src/thread/CMakeFiles/thread.dir/DependInfo.cmake"
+  "src/videostream/CMakeFiles/videostream.dir/DependInfo.cmake"
+  "src/repeater/CMakeFiles/repeater.dir/DependInfo.cmake"
   )

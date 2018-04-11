@@ -1,0 +1,2 @@
+/usr/bin/ar qc libinit.a  CMakeFiles/init.dir/init.cpp.o CMakeFiles/init.dir/help.cpp.o
+/usr/bin/ranlib libinit.a

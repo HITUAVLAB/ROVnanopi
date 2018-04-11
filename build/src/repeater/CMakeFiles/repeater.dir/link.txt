@@ -1,0 +1,2 @@
+/usr/bin/ar qc librepeater.a  CMakeFiles/repeater.dir/downThread.cpp.o CMakeFiles/repeater.dir/repeater.cpp.o CMakeFiles/repeater.dir/upThread.cpp.o
+/usr/bin/ranlib librepeater.a

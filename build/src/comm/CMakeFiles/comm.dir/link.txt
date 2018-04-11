@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcomm.a  CMakeFiles/comm.dir/PracticalSocket.cpp.o CMakeFiles/comm.dir/serial.cpp.o CMakeFiles/comm.dir/timeout.cpp.o
+/usr/bin/ranlib libcomm.a
