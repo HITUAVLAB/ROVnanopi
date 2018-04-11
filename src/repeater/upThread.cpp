@@ -36,19 +36,26 @@ void UpThread::run(){
         std::cout << "Running the uploading thread" << std::endl;
 #endif
         pthread_mutex_lock(&mut);
+#ifdef DEBUG
+	printf("Start reading\n");
+#endif
         repeater.setLength( repeater.Read(repeater.getBuf()) );     //length is the byte the uart read
         if(repeater.getLength()){                                   //buf is not empty
             for(int i = 0; i < repeater.getLength(); i++){
-                //printf("%.2X ",repeater.getBuf()[i]);
-                if (mavlink_parse_char(MAVLINK_COMM_0, repeater.getBuf()[i], repeater.getMavlinkMsg(), repeater.getMavlinkStatus() )){
+#ifdef DEBUG
+		std::cout << "bytes received" << std::endl;
+		printf("%.2X ",repeater.getBuf()[i]);
+#endif            
+		if (mavlink_parse_char(MAVLINK_COMM_0, repeater.getBuf()[i], repeater.getMavlinkMsg(), repeater.getMavlinkStatus() )){
                         //bytes_sent = sendto(sock, repeater.getBuf(), repeater.getLength(), 0, (struct sockaddr*)&gcAddr, sizeof(struct sockaddr_in));
                         printf("mavlink message received\n");
                         printf("the message ID is: %d",repeater.getMavlinkMsg()->msgid);
                 }
             }
-
-            //printf("%d\n",repeater.getLength());
-        }
+#ifdef DEBUG
+            printf("%d\n",repeater.getLength());
+#endif        
+	}
         memset(repeater.getBuf(),0,MAX_BUF_SIZE);
 
 
