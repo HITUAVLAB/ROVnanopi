@@ -4,6 +4,8 @@
 #include"thread.h"
 #include<iostream>
 
+#include "main.h"
+
 class UpThread : public Thread{
 private:
     //The associated thread's for run function

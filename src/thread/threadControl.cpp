@@ -6,7 +6,7 @@
 extern Repeater repeater;
 
 //分配线程锁
-pthread_mutex_t mut;
+extern pthread_mutex_t mut;
 
 //UDP连接相关变量，设置为全局变量，以方便多线程共享
 char target_ip[100];                   //地面站ip

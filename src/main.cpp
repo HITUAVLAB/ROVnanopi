@@ -7,6 +7,7 @@ static volatile int keepRunning = 1;
 uint64_t microsSinceEpoch();
 
 Repeater repeater;
+pthread_mutex_t mut = PTHREAD_MUTEX_INITIALIZER;
 
 /*receive the ctrl + c interupt signal, stop the main thread*/
 void sig_handler( int sig )
@@ -47,8 +48,6 @@ int main(int argc, char** argv)
 
     u.stopSystem();
     d.stopSystem();
-	//pthread_join(MBtoGS_thread,NULL);	
-	//pthread_join(GStoMB_thread,NULL);
 	//repeater.Close();
 	
 	return 0;

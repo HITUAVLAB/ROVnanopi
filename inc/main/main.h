@@ -10,6 +10,7 @@
 #include "threadControl.h"      //pthread operation
 #include "help.h"
 extern Repeater repeater;
+extern pthread_mutex_t mut;
 
 
 #include <errno.h>
