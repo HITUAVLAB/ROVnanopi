@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-#include "mavlink/common/mavlink.h"    //mavlink头文件
+#include "mavlink.h"    //mavlink头文件
 
 static volatile int keepRunning = 1;
 
