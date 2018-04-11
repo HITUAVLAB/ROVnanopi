@@ -48,18 +48,18 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/duan/ROVnanopi
+CMAKE_SOURCE_DIR = /root/ROV/ROVnanopi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/duan/ROVnanopi/build
+CMAKE_BINARY_DIR = /root/ROV/ROVnanopi/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/duan/ROVnanopi/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/duan/ROVnanopi/build/CMakeFiles /home/duan/ROVnanopi/build/src/videostream/CMakeFiles/progress.marks
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/videostream/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/duan/ROVnanopi/build/CMakeFiles 0
+	cd /root/ROV/ROVnanopi/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/ROV/ROVnanopi/build/CMakeFiles /root/ROV/ROVnanopi/build/src/videostream/CMakeFiles/progress.marks
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/videostream/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ROV/ROVnanopi/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/videostream/clean
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/videostream/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/videostream/preinstall
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/videostream/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/videostream/preinstall
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/videostream/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/duan/ROVnanopi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/ROV/ROVnanopi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/videostream/CMakeFiles/videostream.dir/rule:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/videostream/CMakeFiles/videostream.dir/rule
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/videostream/CMakeFiles/videostream.dir/rule
 .PHONY : src/videostream/CMakeFiles/videostream.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ videostream: src/videostream/CMakeFiles/videostream.dir/rule
 
 # fast build rule for target.
 videostream/fast:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/videostream/CMakeFiles/videostream.dir/build.make src/videostream/CMakeFiles/videostream.dir/build
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/videostream/CMakeFiles/videostream.dir/build.make src/videostream/CMakeFiles/videostream.dir/build
 .PHONY : videostream/fast
 
 cameraThread.o: cameraThread.cpp.o
@@ -131,7 +131,7 @@ cameraThread.o: cameraThread.cpp.o
 
 # target to build an object file
 cameraThread.cpp.o:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/videostream/CMakeFiles/videostream.dir/build.make src/videostream/CMakeFiles/videostream.dir/cameraThread.cpp.o
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/videostream/CMakeFiles/videostream.dir/build.make src/videostream/CMakeFiles/videostream.dir/cameraThread.cpp.o
 .PHONY : cameraThread.cpp.o
 
 cameraThread.i: cameraThread.cpp.i
@@ -140,7 +140,7 @@ cameraThread.i: cameraThread.cpp.i
 
 # target to preprocess a source file
 cameraThread.cpp.i:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/videostream/CMakeFiles/videostream.dir/build.make src/videostream/CMakeFiles/videostream.dir/cameraThread.cpp.i
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/videostream/CMakeFiles/videostream.dir/build.make src/videostream/CMakeFiles/videostream.dir/cameraThread.cpp.i
 .PHONY : cameraThread.cpp.i
 
 cameraThread.s: cameraThread.cpp.s
@@ -149,7 +149,7 @@ cameraThread.s: cameraThread.cpp.s
 
 # target to generate assembly for a file
 cameraThread.cpp.s:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/videostream/CMakeFiles/videostream.dir/build.make src/videostream/CMakeFiles/videostream.dir/cameraThread.cpp.s
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/videostream/CMakeFiles/videostream.dir/build.make src/videostream/CMakeFiles/videostream.dir/cameraThread.cpp.s
 .PHONY : cameraThread.cpp.s
 
 # Help Target
@@ -159,8 +159,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... videostream"
 	@echo "... rebuild_cache"
+	@echo "... videostream"
 	@echo "... cameraThread.o"
 	@echo "... cameraThread.i"
 	@echo "... cameraThread.s"
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/duan/ROVnanopi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/ROV/ROVnanopi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

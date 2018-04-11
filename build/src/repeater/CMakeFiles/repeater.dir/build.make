@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/duan/ROVnanopi
+CMAKE_SOURCE_DIR = /root/ROV/ROVnanopi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/duan/ROVnanopi/build
+CMAKE_BINARY_DIR = /root/ROV/ROVnanopi/build
 
 # Include any dependencies generated for this target.
 include src/repeater/CMakeFiles/repeater.dir/depend.make
@@ -59,16 +59,16 @@ include src/repeater/CMakeFiles/repeater.dir/flags.make
 
 src/repeater/CMakeFiles/repeater.dir/downThread.cpp.o: src/repeater/CMakeFiles/repeater.dir/flags.make
 src/repeater/CMakeFiles/repeater.dir/downThread.cpp.o: ../src/repeater/downThread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/duan/ROVnanopi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/repeater/CMakeFiles/repeater.dir/downThread.cpp.o"
-	cd /home/duan/ROVnanopi/build/src/repeater && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/repeater.dir/downThread.cpp.o -c /home/duan/ROVnanopi/src/repeater/downThread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ROV/ROVnanopi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/repeater/CMakeFiles/repeater.dir/downThread.cpp.o"
+	cd /root/ROV/ROVnanopi/build/src/repeater && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/repeater.dir/downThread.cpp.o -c /root/ROV/ROVnanopi/src/repeater/downThread.cpp
 
 src/repeater/CMakeFiles/repeater.dir/downThread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/repeater.dir/downThread.cpp.i"
-	cd /home/duan/ROVnanopi/build/src/repeater && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/duan/ROVnanopi/src/repeater/downThread.cpp > CMakeFiles/repeater.dir/downThread.cpp.i
+	cd /root/ROV/ROVnanopi/build/src/repeater && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ROV/ROVnanopi/src/repeater/downThread.cpp > CMakeFiles/repeater.dir/downThread.cpp.i
 
 src/repeater/CMakeFiles/repeater.dir/downThread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/repeater.dir/downThread.cpp.s"
-	cd /home/duan/ROVnanopi/build/src/repeater && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/duan/ROVnanopi/src/repeater/downThread.cpp -o CMakeFiles/repeater.dir/downThread.cpp.s
+	cd /root/ROV/ROVnanopi/build/src/repeater && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ROV/ROVnanopi/src/repeater/downThread.cpp -o CMakeFiles/repeater.dir/downThread.cpp.s
 
 src/repeater/CMakeFiles/repeater.dir/downThread.cpp.o.requires:
 
@@ -83,16 +83,16 @@ src/repeater/CMakeFiles/repeater.dir/downThread.cpp.o.provides.build: src/repeat
 
 src/repeater/CMakeFiles/repeater.dir/repeater.cpp.o: src/repeater/CMakeFiles/repeater.dir/flags.make
 src/repeater/CMakeFiles/repeater.dir/repeater.cpp.o: ../src/repeater/repeater.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/duan/ROVnanopi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/repeater/CMakeFiles/repeater.dir/repeater.cpp.o"
-	cd /home/duan/ROVnanopi/build/src/repeater && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/repeater.dir/repeater.cpp.o -c /home/duan/ROVnanopi/src/repeater/repeater.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ROV/ROVnanopi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/repeater/CMakeFiles/repeater.dir/repeater.cpp.o"
+	cd /root/ROV/ROVnanopi/build/src/repeater && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/repeater.dir/repeater.cpp.o -c /root/ROV/ROVnanopi/src/repeater/repeater.cpp
 
 src/repeater/CMakeFiles/repeater.dir/repeater.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/repeater.dir/repeater.cpp.i"
-	cd /home/duan/ROVnanopi/build/src/repeater && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/duan/ROVnanopi/src/repeater/repeater.cpp > CMakeFiles/repeater.dir/repeater.cpp.i
+	cd /root/ROV/ROVnanopi/build/src/repeater && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ROV/ROVnanopi/src/repeater/repeater.cpp > CMakeFiles/repeater.dir/repeater.cpp.i
 
 src/repeater/CMakeFiles/repeater.dir/repeater.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/repeater.dir/repeater.cpp.s"
-	cd /home/duan/ROVnanopi/build/src/repeater && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/duan/ROVnanopi/src/repeater/repeater.cpp -o CMakeFiles/repeater.dir/repeater.cpp.s
+	cd /root/ROV/ROVnanopi/build/src/repeater && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ROV/ROVnanopi/src/repeater/repeater.cpp -o CMakeFiles/repeater.dir/repeater.cpp.s
 
 src/repeater/CMakeFiles/repeater.dir/repeater.cpp.o.requires:
 
@@ -107,16 +107,16 @@ src/repeater/CMakeFiles/repeater.dir/repeater.cpp.o.provides.build: src/repeater
 
 src/repeater/CMakeFiles/repeater.dir/upThread.cpp.o: src/repeater/CMakeFiles/repeater.dir/flags.make
 src/repeater/CMakeFiles/repeater.dir/upThread.cpp.o: ../src/repeater/upThread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/duan/ROVnanopi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/repeater/CMakeFiles/repeater.dir/upThread.cpp.o"
-	cd /home/duan/ROVnanopi/build/src/repeater && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/repeater.dir/upThread.cpp.o -c /home/duan/ROVnanopi/src/repeater/upThread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ROV/ROVnanopi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/repeater/CMakeFiles/repeater.dir/upThread.cpp.o"
+	cd /root/ROV/ROVnanopi/build/src/repeater && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/repeater.dir/upThread.cpp.o -c /root/ROV/ROVnanopi/src/repeater/upThread.cpp
 
 src/repeater/CMakeFiles/repeater.dir/upThread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/repeater.dir/upThread.cpp.i"
-	cd /home/duan/ROVnanopi/build/src/repeater && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/duan/ROVnanopi/src/repeater/upThread.cpp > CMakeFiles/repeater.dir/upThread.cpp.i
+	cd /root/ROV/ROVnanopi/build/src/repeater && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ROV/ROVnanopi/src/repeater/upThread.cpp > CMakeFiles/repeater.dir/upThread.cpp.i
 
 src/repeater/CMakeFiles/repeater.dir/upThread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/repeater.dir/upThread.cpp.s"
-	cd /home/duan/ROVnanopi/build/src/repeater && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/duan/ROVnanopi/src/repeater/upThread.cpp -o CMakeFiles/repeater.dir/upThread.cpp.s
+	cd /root/ROV/ROVnanopi/build/src/repeater && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ROV/ROVnanopi/src/repeater/upThread.cpp -o CMakeFiles/repeater.dir/upThread.cpp.s
 
 src/repeater/CMakeFiles/repeater.dir/upThread.cpp.o.requires:
 
@@ -143,9 +143,9 @@ src/repeater/librepeater.a: src/repeater/CMakeFiles/repeater.dir/repeater.cpp.o
 src/repeater/librepeater.a: src/repeater/CMakeFiles/repeater.dir/upThread.cpp.o
 src/repeater/librepeater.a: src/repeater/CMakeFiles/repeater.dir/build.make
 src/repeater/librepeater.a: src/repeater/CMakeFiles/repeater.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/duan/ROVnanopi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library librepeater.a"
-	cd /home/duan/ROVnanopi/build/src/repeater && $(CMAKE_COMMAND) -P CMakeFiles/repeater.dir/cmake_clean_target.cmake
-	cd /home/duan/ROVnanopi/build/src/repeater && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/repeater.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/ROV/ROVnanopi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library librepeater.a"
+	cd /root/ROV/ROVnanopi/build/src/repeater && $(CMAKE_COMMAND) -P CMakeFiles/repeater.dir/cmake_clean_target.cmake
+	cd /root/ROV/ROVnanopi/build/src/repeater && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/repeater.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/repeater/CMakeFiles/repeater.dir/build: src/repeater/librepeater.a
@@ -159,10 +159,10 @@ src/repeater/CMakeFiles/repeater.dir/requires: src/repeater/CMakeFiles/repeater.
 .PHONY : src/repeater/CMakeFiles/repeater.dir/requires
 
 src/repeater/CMakeFiles/repeater.dir/clean:
-	cd /home/duan/ROVnanopi/build/src/repeater && $(CMAKE_COMMAND) -P CMakeFiles/repeater.dir/cmake_clean.cmake
+	cd /root/ROV/ROVnanopi/build/src/repeater && $(CMAKE_COMMAND) -P CMakeFiles/repeater.dir/cmake_clean.cmake
 .PHONY : src/repeater/CMakeFiles/repeater.dir/clean
 
 src/repeater/CMakeFiles/repeater.dir/depend:
-	cd /home/duan/ROVnanopi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/duan/ROVnanopi /home/duan/ROVnanopi/src/repeater /home/duan/ROVnanopi/build /home/duan/ROVnanopi/build/src/repeater /home/duan/ROVnanopi/build/src/repeater/CMakeFiles/repeater.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/ROV/ROVnanopi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/ROV/ROVnanopi /root/ROV/ROVnanopi/src/repeater /root/ROV/ROVnanopi/build /root/ROV/ROVnanopi/build/src/repeater /root/ROV/ROVnanopi/build/src/repeater/CMakeFiles/repeater.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/repeater/CMakeFiles/repeater.dir/depend
 

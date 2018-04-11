@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/duan/ROVnanopi
+CMAKE_SOURCE_DIR = /root/ROV/ROVnanopi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/duan/ROVnanopi/build
+CMAKE_BINARY_DIR = /root/ROV/ROVnanopi/build
 
 # Include any dependencies generated for this target.
 include src/comm/CMakeFiles/comm.dir/depend.make
@@ -59,16 +59,16 @@ include src/comm/CMakeFiles/comm.dir/flags.make
 
 src/comm/CMakeFiles/comm.dir/PracticalSocket.cpp.o: src/comm/CMakeFiles/comm.dir/flags.make
 src/comm/CMakeFiles/comm.dir/PracticalSocket.cpp.o: ../src/comm/PracticalSocket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/duan/ROVnanopi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/comm/CMakeFiles/comm.dir/PracticalSocket.cpp.o"
-	cd /home/duan/ROVnanopi/build/src/comm && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/comm.dir/PracticalSocket.cpp.o -c /home/duan/ROVnanopi/src/comm/PracticalSocket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ROV/ROVnanopi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/comm/CMakeFiles/comm.dir/PracticalSocket.cpp.o"
+	cd /root/ROV/ROVnanopi/build/src/comm && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/comm.dir/PracticalSocket.cpp.o -c /root/ROV/ROVnanopi/src/comm/PracticalSocket.cpp
 
 src/comm/CMakeFiles/comm.dir/PracticalSocket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/comm.dir/PracticalSocket.cpp.i"
-	cd /home/duan/ROVnanopi/build/src/comm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/duan/ROVnanopi/src/comm/PracticalSocket.cpp > CMakeFiles/comm.dir/PracticalSocket.cpp.i
+	cd /root/ROV/ROVnanopi/build/src/comm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ROV/ROVnanopi/src/comm/PracticalSocket.cpp > CMakeFiles/comm.dir/PracticalSocket.cpp.i
 
 src/comm/CMakeFiles/comm.dir/PracticalSocket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/comm.dir/PracticalSocket.cpp.s"
-	cd /home/duan/ROVnanopi/build/src/comm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/duan/ROVnanopi/src/comm/PracticalSocket.cpp -o CMakeFiles/comm.dir/PracticalSocket.cpp.s
+	cd /root/ROV/ROVnanopi/build/src/comm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ROV/ROVnanopi/src/comm/PracticalSocket.cpp -o CMakeFiles/comm.dir/PracticalSocket.cpp.s
 
 src/comm/CMakeFiles/comm.dir/PracticalSocket.cpp.o.requires:
 
@@ -83,16 +83,16 @@ src/comm/CMakeFiles/comm.dir/PracticalSocket.cpp.o.provides.build: src/comm/CMak
 
 src/comm/CMakeFiles/comm.dir/serial.cpp.o: src/comm/CMakeFiles/comm.dir/flags.make
 src/comm/CMakeFiles/comm.dir/serial.cpp.o: ../src/comm/serial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/duan/ROVnanopi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/comm/CMakeFiles/comm.dir/serial.cpp.o"
-	cd /home/duan/ROVnanopi/build/src/comm && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/comm.dir/serial.cpp.o -c /home/duan/ROVnanopi/src/comm/serial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ROV/ROVnanopi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/comm/CMakeFiles/comm.dir/serial.cpp.o"
+	cd /root/ROV/ROVnanopi/build/src/comm && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/comm.dir/serial.cpp.o -c /root/ROV/ROVnanopi/src/comm/serial.cpp
 
 src/comm/CMakeFiles/comm.dir/serial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/comm.dir/serial.cpp.i"
-	cd /home/duan/ROVnanopi/build/src/comm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/duan/ROVnanopi/src/comm/serial.cpp > CMakeFiles/comm.dir/serial.cpp.i
+	cd /root/ROV/ROVnanopi/build/src/comm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ROV/ROVnanopi/src/comm/serial.cpp > CMakeFiles/comm.dir/serial.cpp.i
 
 src/comm/CMakeFiles/comm.dir/serial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/comm.dir/serial.cpp.s"
-	cd /home/duan/ROVnanopi/build/src/comm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/duan/ROVnanopi/src/comm/serial.cpp -o CMakeFiles/comm.dir/serial.cpp.s
+	cd /root/ROV/ROVnanopi/build/src/comm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ROV/ROVnanopi/src/comm/serial.cpp -o CMakeFiles/comm.dir/serial.cpp.s
 
 src/comm/CMakeFiles/comm.dir/serial.cpp.o.requires:
 
@@ -107,16 +107,16 @@ src/comm/CMakeFiles/comm.dir/serial.cpp.o.provides.build: src/comm/CMakeFiles/co
 
 src/comm/CMakeFiles/comm.dir/timeout.cpp.o: src/comm/CMakeFiles/comm.dir/flags.make
 src/comm/CMakeFiles/comm.dir/timeout.cpp.o: ../src/comm/timeout.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/duan/ROVnanopi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/comm/CMakeFiles/comm.dir/timeout.cpp.o"
-	cd /home/duan/ROVnanopi/build/src/comm && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/comm.dir/timeout.cpp.o -c /home/duan/ROVnanopi/src/comm/timeout.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ROV/ROVnanopi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/comm/CMakeFiles/comm.dir/timeout.cpp.o"
+	cd /root/ROV/ROVnanopi/build/src/comm && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/comm.dir/timeout.cpp.o -c /root/ROV/ROVnanopi/src/comm/timeout.cpp
 
 src/comm/CMakeFiles/comm.dir/timeout.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/comm.dir/timeout.cpp.i"
-	cd /home/duan/ROVnanopi/build/src/comm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/duan/ROVnanopi/src/comm/timeout.cpp > CMakeFiles/comm.dir/timeout.cpp.i
+	cd /root/ROV/ROVnanopi/build/src/comm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ROV/ROVnanopi/src/comm/timeout.cpp > CMakeFiles/comm.dir/timeout.cpp.i
 
 src/comm/CMakeFiles/comm.dir/timeout.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/comm.dir/timeout.cpp.s"
-	cd /home/duan/ROVnanopi/build/src/comm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/duan/ROVnanopi/src/comm/timeout.cpp -o CMakeFiles/comm.dir/timeout.cpp.s
+	cd /root/ROV/ROVnanopi/build/src/comm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ROV/ROVnanopi/src/comm/timeout.cpp -o CMakeFiles/comm.dir/timeout.cpp.s
 
 src/comm/CMakeFiles/comm.dir/timeout.cpp.o.requires:
 
@@ -143,9 +143,9 @@ src/comm/libcomm.a: src/comm/CMakeFiles/comm.dir/serial.cpp.o
 src/comm/libcomm.a: src/comm/CMakeFiles/comm.dir/timeout.cpp.o
 src/comm/libcomm.a: src/comm/CMakeFiles/comm.dir/build.make
 src/comm/libcomm.a: src/comm/CMakeFiles/comm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/duan/ROVnanopi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libcomm.a"
-	cd /home/duan/ROVnanopi/build/src/comm && $(CMAKE_COMMAND) -P CMakeFiles/comm.dir/cmake_clean_target.cmake
-	cd /home/duan/ROVnanopi/build/src/comm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/comm.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/ROV/ROVnanopi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libcomm.a"
+	cd /root/ROV/ROVnanopi/build/src/comm && $(CMAKE_COMMAND) -P CMakeFiles/comm.dir/cmake_clean_target.cmake
+	cd /root/ROV/ROVnanopi/build/src/comm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/comm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/comm/CMakeFiles/comm.dir/build: src/comm/libcomm.a
@@ -159,10 +159,10 @@ src/comm/CMakeFiles/comm.dir/requires: src/comm/CMakeFiles/comm.dir/timeout.cpp.
 .PHONY : src/comm/CMakeFiles/comm.dir/requires
 
 src/comm/CMakeFiles/comm.dir/clean:
-	cd /home/duan/ROVnanopi/build/src/comm && $(CMAKE_COMMAND) -P CMakeFiles/comm.dir/cmake_clean.cmake
+	cd /root/ROV/ROVnanopi/build/src/comm && $(CMAKE_COMMAND) -P CMakeFiles/comm.dir/cmake_clean.cmake
 .PHONY : src/comm/CMakeFiles/comm.dir/clean
 
 src/comm/CMakeFiles/comm.dir/depend:
-	cd /home/duan/ROVnanopi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/duan/ROVnanopi /home/duan/ROVnanopi/src/comm /home/duan/ROVnanopi/build /home/duan/ROVnanopi/build/src/comm /home/duan/ROVnanopi/build/src/comm/CMakeFiles/comm.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/ROV/ROVnanopi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/ROV/ROVnanopi /root/ROV/ROVnanopi/src/comm /root/ROV/ROVnanopi/build /root/ROV/ROVnanopi/build/src/comm /root/ROV/ROVnanopi/build/src/comm/CMakeFiles/comm.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/comm/CMakeFiles/comm.dir/depend
 

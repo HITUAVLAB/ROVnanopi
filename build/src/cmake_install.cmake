@@ -1,4 +1,4 @@
-# Install script for directory: /home/duan/ROVnanopi/src
+# Install script for directory: /root/ROV/ROVnanopi/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -34,11 +34,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/duan/ROVnanopi/build/src/init/cmake_install.cmake")
-  include("/home/duan/ROVnanopi/build/src/comm/cmake_install.cmake")
-  include("/home/duan/ROVnanopi/build/src/thread/cmake_install.cmake")
-  include("/home/duan/ROVnanopi/build/src/videostream/cmake_install.cmake")
-  include("/home/duan/ROVnanopi/build/src/repeater/cmake_install.cmake")
+  include("/root/ROV/ROVnanopi/build/src/init/cmake_install.cmake")
+  include("/root/ROV/ROVnanopi/build/src/comm/cmake_install.cmake")
+  include("/root/ROV/ROVnanopi/build/src/thread/cmake_install.cmake")
+  include("/root/ROV/ROVnanopi/build/src/videostream/cmake_install.cmake")
+  include("/root/ROV/ROVnanopi/build/src/repeater/cmake_install.cmake")
 
 endif()
 

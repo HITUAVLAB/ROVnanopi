@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/duan/ROVnanopi
+CMAKE_SOURCE_DIR = /root/ROV/ROVnanopi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/duan/ROVnanopi/build
+CMAKE_BINARY_DIR = /root/ROV/ROVnanopi/build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -78,16 +67,27 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/duan/ROVnanopi/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/duan/ROVnanopi/build/CMakeFiles /home/duan/ROVnanopi/build/src/repeater/CMakeFiles/progress.marks
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/repeater/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/duan/ROVnanopi/build/CMakeFiles 0
+	cd /root/ROV/ROVnanopi/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/ROV/ROVnanopi/build/CMakeFiles /root/ROV/ROVnanopi/build/src/repeater/CMakeFiles/progress.marks
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/repeater/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ROV/ROVnanopi/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/repeater/clean
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/repeater/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/repeater/preinstall
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/repeater/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/repeater/preinstall
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/repeater/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/duan/ROVnanopi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/ROV/ROVnanopi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/repeater/CMakeFiles/repeater.dir/rule:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/repeater/CMakeFiles/repeater.dir/rule
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/repeater/CMakeFiles/repeater.dir/rule
 .PHONY : src/repeater/CMakeFiles/repeater.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ repeater: src/repeater/CMakeFiles/repeater.dir/rule
 
 # fast build rule for target.
 repeater/fast:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/build
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/build
 .PHONY : repeater/fast
 
 downThread.o: downThread.cpp.o
@@ -131,7 +131,7 @@ downThread.o: downThread.cpp.o
 
 # target to build an object file
 downThread.cpp.o:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/downThread.cpp.o
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/downThread.cpp.o
 .PHONY : downThread.cpp.o
 
 downThread.i: downThread.cpp.i
@@ -140,7 +140,7 @@ downThread.i: downThread.cpp.i
 
 # target to preprocess a source file
 downThread.cpp.i:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/downThread.cpp.i
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/downThread.cpp.i
 .PHONY : downThread.cpp.i
 
 downThread.s: downThread.cpp.s
@@ -149,7 +149,7 @@ downThread.s: downThread.cpp.s
 
 # target to generate assembly for a file
 downThread.cpp.s:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/downThread.cpp.s
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/downThread.cpp.s
 .PHONY : downThread.cpp.s
 
 repeater.o: repeater.cpp.o
@@ -158,7 +158,7 @@ repeater.o: repeater.cpp.o
 
 # target to build an object file
 repeater.cpp.o:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/repeater.cpp.o
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/repeater.cpp.o
 .PHONY : repeater.cpp.o
 
 repeater.i: repeater.cpp.i
@@ -167,7 +167,7 @@ repeater.i: repeater.cpp.i
 
 # target to preprocess a source file
 repeater.cpp.i:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/repeater.cpp.i
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/repeater.cpp.i
 .PHONY : repeater.cpp.i
 
 repeater.s: repeater.cpp.s
@@ -176,7 +176,7 @@ repeater.s: repeater.cpp.s
 
 # target to generate assembly for a file
 repeater.cpp.s:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/repeater.cpp.s
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/repeater.cpp.s
 .PHONY : repeater.cpp.s
 
 upThread.o: upThread.cpp.o
@@ -185,7 +185,7 @@ upThread.o: upThread.cpp.o
 
 # target to build an object file
 upThread.cpp.o:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/upThread.cpp.o
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/upThread.cpp.o
 .PHONY : upThread.cpp.o
 
 upThread.i: upThread.cpp.i
@@ -194,7 +194,7 @@ upThread.i: upThread.cpp.i
 
 # target to preprocess a source file
 upThread.cpp.i:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/upThread.cpp.i
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/upThread.cpp.i
 .PHONY : upThread.cpp.i
 
 upThread.s: upThread.cpp.s
@@ -203,7 +203,7 @@ upThread.s: upThread.cpp.s
 
 # target to generate assembly for a file
 upThread.cpp.s:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/upThread.cpp.s
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/repeater/CMakeFiles/repeater.dir/build.make src/repeater/CMakeFiles/repeater.dir/upThread.cpp.s
 .PHONY : upThread.cpp.s
 
 # Help Target
@@ -212,9 +212,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... repeater"
-	@echo "... rebuild_cache"
 	@echo "... downThread.o"
 	@echo "... downThread.i"
 	@echo "... downThread.s"
@@ -235,6 +235,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/duan/ROVnanopi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/ROV/ROVnanopi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

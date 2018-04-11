@@ -24,6 +24,62 @@ string.h
 errno.h
 -
 
+../inc/main/help.h
+
+../inc/main/init.h
+string
+-
+
+../inc/main/main.h
+stdio.h
+-
+repeater.h
+../inc/main/repeater.h
+serial.h
+../inc/main/serial.h
+init.h
+../inc/main/init.h
+threadControl.h
+../inc/main/threadControl.h
+help.h
+../inc/main/help.h
+errno.h
+-
+string.h
+-
+sys/socket.h
+-
+sys/types.h
+-
+netinet/in.h
+-
+unistd.h
+-
+stdlib.h
+-
+fcntl.h
+-
+time.h
+-
+csignal
+-
+unix.h
+-
+sys/time.h
+-
+time.h
+-
+arpa/inet.h
+-
+stdbool.h
+-
+pthread.h
+-
+upThread.h
+../inc/main/upThread.h
+downThread.h
+../inc/main/downThread.h
+
 ../inc/mavlink/ROV/./mavlink_msg_joystick_control.h
 
 ../inc/mavlink/ROV/./mavlink_msg_jy901_data.h
@@ -805,6 +861,8 @@ thread.h
 ../inc/repeater/thread.h
 iostream
 -
+main.h
+../inc/repeater/main.h
 
 ../inc/thread/runnable.h
 
@@ -814,23 +872,27 @@ pthread.h
 runnable.h
 ../inc/thread/runnable.h
 
+../inc/thread/threadControl.h
+pthread.h
+-
+
 ../inc/videostream/cameraThread.h
 thread.h
 ../inc/videostream/thread.h
 iostream
 -
 
-/home/duan/ROVnanopi/src/repeater/downThread.cpp
+/root/ROV/ROVnanopi/src/repeater/downThread.cpp
 downThread.h
-/home/duan/ROVnanopi/src/repeater/downThread.h
+/root/ROV/ROVnanopi/src/repeater/downThread.h
 
-/home/duan/ROVnanopi/src/repeater/repeater.cpp
+/root/ROV/ROVnanopi/src/repeater/repeater.cpp
 repeater.h
-/home/duan/ROVnanopi/src/repeater/repeater.h
+/root/ROV/ROVnanopi/src/repeater/repeater.h
 
-/home/duan/ROVnanopi/src/repeater/upThread.cpp
+/root/ROV/ROVnanopi/src/repeater/upThread.cpp
 upThread.h
-/home/duan/ROVnanopi/src/repeater/upThread.h
+/root/ROV/ROVnanopi/src/repeater/upThread.h
 cameraThread.h
-/home/duan/ROVnanopi/src/repeater/cameraThread.h
+/root/ROV/ROVnanopi/src/repeater/cameraThread.h
 

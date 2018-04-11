@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/thread/runnable.h
+
+../inc/thread/thread.h
+pthread.h
+-
+runnable.h
+../inc/thread/runnable.h
+
+../inc/videostream/cameraThread.h
+thread.h
+../inc/videostream/thread.h
+iostream
+-
+
+/root/ROV/ROVnanopi/src/videostream/cameraThread.cpp
+cameraThread.h
+/root/ROV/ROVnanopi/src/videostream/cameraThread.h
+

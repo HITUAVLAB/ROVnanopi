@@ -48,18 +48,18 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/duan/ROVnanopi
+CMAKE_SOURCE_DIR = /root/ROV/ROVnanopi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/duan/ROVnanopi/build
+CMAKE_BINARY_DIR = /root/ROV/ROVnanopi/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/duan/ROVnanopi/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/duan/ROVnanopi/build/CMakeFiles /home/duan/ROVnanopi/build/src/init/CMakeFiles/progress.marks
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/init/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/duan/ROVnanopi/build/CMakeFiles 0
+	cd /root/ROV/ROVnanopi/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/ROV/ROVnanopi/build/CMakeFiles /root/ROV/ROVnanopi/build/src/init/CMakeFiles/progress.marks
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/init/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ROV/ROVnanopi/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/init/clean
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/init/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/init/preinstall
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/init/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/init/preinstall
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/init/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/duan/ROVnanopi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/ROV/ROVnanopi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/init/CMakeFiles/init.dir/rule:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/init/CMakeFiles/init.dir/rule
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/init/CMakeFiles/init.dir/rule
 .PHONY : src/init/CMakeFiles/init.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ init: src/init/CMakeFiles/init.dir/rule
 
 # fast build rule for target.
 init/fast:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/init/CMakeFiles/init.dir/build.make src/init/CMakeFiles/init.dir/build
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/init/CMakeFiles/init.dir/build.make src/init/CMakeFiles/init.dir/build
 .PHONY : init/fast
 
 help.o: help.cpp.o
@@ -131,7 +131,7 @@ help.o: help.cpp.o
 
 # target to build an object file
 help.cpp.o:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/init/CMakeFiles/init.dir/build.make src/init/CMakeFiles/init.dir/help.cpp.o
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/init/CMakeFiles/init.dir/build.make src/init/CMakeFiles/init.dir/help.cpp.o
 .PHONY : help.cpp.o
 
 help.i: help.cpp.i
@@ -140,7 +140,7 @@ help.i: help.cpp.i
 
 # target to preprocess a source file
 help.cpp.i:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/init/CMakeFiles/init.dir/build.make src/init/CMakeFiles/init.dir/help.cpp.i
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/init/CMakeFiles/init.dir/build.make src/init/CMakeFiles/init.dir/help.cpp.i
 .PHONY : help.cpp.i
 
 help.s: help.cpp.s
@@ -149,7 +149,7 @@ help.s: help.cpp.s
 
 # target to generate assembly for a file
 help.cpp.s:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/init/CMakeFiles/init.dir/build.make src/init/CMakeFiles/init.dir/help.cpp.s
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/init/CMakeFiles/init.dir/build.make src/init/CMakeFiles/init.dir/help.cpp.s
 .PHONY : help.cpp.s
 
 init.o: init.cpp.o
@@ -158,7 +158,7 @@ init.o: init.cpp.o
 
 # target to build an object file
 init.cpp.o:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/init/CMakeFiles/init.dir/build.make src/init/CMakeFiles/init.dir/init.cpp.o
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/init/CMakeFiles/init.dir/build.make src/init/CMakeFiles/init.dir/init.cpp.o
 .PHONY : init.cpp.o
 
 init.i: init.cpp.i
@@ -167,7 +167,7 @@ init.i: init.cpp.i
 
 # target to preprocess a source file
 init.cpp.i:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/init/CMakeFiles/init.dir/build.make src/init/CMakeFiles/init.dir/init.cpp.i
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/init/CMakeFiles/init.dir/build.make src/init/CMakeFiles/init.dir/init.cpp.i
 .PHONY : init.cpp.i
 
 init.s: init.cpp.s
@@ -176,7 +176,7 @@ init.s: init.cpp.s
 
 # target to generate assembly for a file
 init.cpp.s:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/init/CMakeFiles/init.dir/build.make src/init/CMakeFiles/init.dir/init.cpp.s
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/init/CMakeFiles/init.dir/build.make src/init/CMakeFiles/init.dir/init.cpp.s
 .PHONY : init.cpp.s
 
 # Help Target
@@ -186,8 +186,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... init"
 	@echo "... rebuild_cache"
+	@echo "... init"
 	@echo "... help.o"
 	@echo "... help.i"
 	@echo "... help.s"
@@ -205,6 +205,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/duan/ROVnanopi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/ROV/ROVnanopi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

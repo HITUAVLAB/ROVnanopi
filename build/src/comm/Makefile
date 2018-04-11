@@ -48,18 +48,18 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/duan/ROVnanopi
+CMAKE_SOURCE_DIR = /root/ROV/ROVnanopi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/duan/ROVnanopi/build
+CMAKE_BINARY_DIR = /root/ROV/ROVnanopi/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/duan/ROVnanopi/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/duan/ROVnanopi/build/CMakeFiles /home/duan/ROVnanopi/build/src/comm/CMakeFiles/progress.marks
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/comm/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/duan/ROVnanopi/build/CMakeFiles 0
+	cd /root/ROV/ROVnanopi/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/ROV/ROVnanopi/build/CMakeFiles /root/ROV/ROVnanopi/build/src/comm/CMakeFiles/progress.marks
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/comm/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ROV/ROVnanopi/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/comm/clean
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/comm/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/comm/preinstall
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/comm/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/comm/preinstall
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/comm/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/duan/ROVnanopi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/ROV/ROVnanopi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/comm/CMakeFiles/comm.dir/rule:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/comm/CMakeFiles/comm.dir/rule
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f CMakeFiles/Makefile2 src/comm/CMakeFiles/comm.dir/rule
 .PHONY : src/comm/CMakeFiles/comm.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ comm: src/comm/CMakeFiles/comm.dir/rule
 
 # fast build rule for target.
 comm/fast:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/build
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/build
 .PHONY : comm/fast
 
 PracticalSocket.o: PracticalSocket.cpp.o
@@ -131,7 +131,7 @@ PracticalSocket.o: PracticalSocket.cpp.o
 
 # target to build an object file
 PracticalSocket.cpp.o:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/PracticalSocket.cpp.o
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/PracticalSocket.cpp.o
 .PHONY : PracticalSocket.cpp.o
 
 PracticalSocket.i: PracticalSocket.cpp.i
@@ -140,7 +140,7 @@ PracticalSocket.i: PracticalSocket.cpp.i
 
 # target to preprocess a source file
 PracticalSocket.cpp.i:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/PracticalSocket.cpp.i
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/PracticalSocket.cpp.i
 .PHONY : PracticalSocket.cpp.i
 
 PracticalSocket.s: PracticalSocket.cpp.s
@@ -149,7 +149,7 @@ PracticalSocket.s: PracticalSocket.cpp.s
 
 # target to generate assembly for a file
 PracticalSocket.cpp.s:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/PracticalSocket.cpp.s
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/PracticalSocket.cpp.s
 .PHONY : PracticalSocket.cpp.s
 
 serial.o: serial.cpp.o
@@ -158,7 +158,7 @@ serial.o: serial.cpp.o
 
 # target to build an object file
 serial.cpp.o:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/serial.cpp.o
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/serial.cpp.o
 .PHONY : serial.cpp.o
 
 serial.i: serial.cpp.i
@@ -167,7 +167,7 @@ serial.i: serial.cpp.i
 
 # target to preprocess a source file
 serial.cpp.i:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/serial.cpp.i
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/serial.cpp.i
 .PHONY : serial.cpp.i
 
 serial.s: serial.cpp.s
@@ -176,7 +176,7 @@ serial.s: serial.cpp.s
 
 # target to generate assembly for a file
 serial.cpp.s:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/serial.cpp.s
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/serial.cpp.s
 .PHONY : serial.cpp.s
 
 timeout.o: timeout.cpp.o
@@ -185,7 +185,7 @@ timeout.o: timeout.cpp.o
 
 # target to build an object file
 timeout.cpp.o:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/timeout.cpp.o
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/timeout.cpp.o
 .PHONY : timeout.cpp.o
 
 timeout.i: timeout.cpp.i
@@ -194,7 +194,7 @@ timeout.i: timeout.cpp.i
 
 # target to preprocess a source file
 timeout.cpp.i:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/timeout.cpp.i
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/timeout.cpp.i
 .PHONY : timeout.cpp.i
 
 timeout.s: timeout.cpp.s
@@ -203,7 +203,7 @@ timeout.s: timeout.cpp.s
 
 # target to generate assembly for a file
 timeout.cpp.s:
-	cd /home/duan/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/timeout.cpp.s
+	cd /root/ROV/ROVnanopi/build && $(MAKE) -f src/comm/CMakeFiles/comm.dir/build.make src/comm/CMakeFiles/comm.dir/timeout.cpp.s
 .PHONY : timeout.cpp.s
 
 # Help Target
@@ -213,8 +213,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... comm"
 	@echo "... rebuild_cache"
+	@echo "... comm"
 	@echo "... PracticalSocket.o"
 	@echo "... PracticalSocket.i"
 	@echo "... PracticalSocket.s"
@@ -235,6 +235,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/duan/ROVnanopi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/ROV/ROVnanopi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

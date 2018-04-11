@@ -4,11 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/duan/ROVnanopi/src/repeater/downThread.cpp" "/home/duan/ROVnanopi/build/src/repeater/CMakeFiles/repeater.dir/downThread.cpp.o"
-  "/home/duan/ROVnanopi/src/repeater/repeater.cpp" "/home/duan/ROVnanopi/build/src/repeater/CMakeFiles/repeater.dir/repeater.cpp.o"
-  "/home/duan/ROVnanopi/src/repeater/upThread.cpp" "/home/duan/ROVnanopi/build/src/repeater/CMakeFiles/repeater.dir/upThread.cpp.o"
+  "/root/ROV/ROVnanopi/src/repeater/downThread.cpp" "/root/ROV/ROVnanopi/build/src/repeater/CMakeFiles/repeater.dir/downThread.cpp.o"
+  "/root/ROV/ROVnanopi/src/repeater/repeater.cpp" "/root/ROV/ROVnanopi/build/src/repeater/CMakeFiles/repeater.dir/repeater.cpp.o"
+  "/root/ROV/ROVnanopi/src/repeater/upThread.cpp" "/root/ROV/ROVnanopi/build/src/repeater/CMakeFiles/repeater.dir/upThread.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "DEBUG"
+  )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
@@ -18,6 +23,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../inc/repeater"
   "../inc/videostream"
   "../inc/comm"
+  "../inc/projectdebug"
   "../inc/mavlink/ROV"
   "../usr/local/include"
   "../usr/include"

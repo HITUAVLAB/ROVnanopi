@@ -4,11 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/duan/ROVnanopi/src/comm/PracticalSocket.cpp" "/home/duan/ROVnanopi/build/src/comm/CMakeFiles/comm.dir/PracticalSocket.cpp.o"
-  "/home/duan/ROVnanopi/src/comm/serial.cpp" "/home/duan/ROVnanopi/build/src/comm/CMakeFiles/comm.dir/serial.cpp.o"
-  "/home/duan/ROVnanopi/src/comm/timeout.cpp" "/home/duan/ROVnanopi/build/src/comm/CMakeFiles/comm.dir/timeout.cpp.o"
+  "/root/ROV/ROVnanopi/src/comm/PracticalSocket.cpp" "/root/ROV/ROVnanopi/build/src/comm/CMakeFiles/comm.dir/PracticalSocket.cpp.o"
+  "/root/ROV/ROVnanopi/src/comm/serial.cpp" "/root/ROV/ROVnanopi/build/src/comm/CMakeFiles/comm.dir/serial.cpp.o"
+  "/root/ROV/ROVnanopi/src/comm/timeout.cpp" "/root/ROV/ROVnanopi/build/src/comm/CMakeFiles/comm.dir/timeout.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "DEBUG"
+  )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
@@ -18,6 +23,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../inc/repeater"
   "../inc/videostream"
   "../inc/comm"
+  "../inc/projectdebug"
   "../inc/mavlink/ROV"
   "../usr/local/include"
   "../usr/include"
