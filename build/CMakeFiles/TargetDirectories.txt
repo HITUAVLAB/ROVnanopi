@@ -1,3 +1,7 @@
-/root/ROV/ROVnanopi/build/CMakeFiles/edit_cache.dir
-/root/ROV/ROVnanopi/build/CMakeFiles/rebuild_cache.dir
-/root/ROV/ROVnanopi/build/CMakeFiles/ROVnanopi.dir
+/home/duan/ROVnanopi/build/CMakeFiles/edit_cache.dir
+/home/duan/ROVnanopi/build/CMakeFiles/ROVnanopi.dir
+/home/duan/ROVnanopi/build/CMakeFiles/rebuild_cache.dir
+/home/duan/ROVnanopi/build/src/CMakeFiles/edit_cache.dir
+/home/duan/ROVnanopi/build/src/CMakeFiles/rebuild_cache.dir
+/home/duan/ROVnanopi/build/inc/CMakeFiles/edit_cache.dir
+/home/duan/ROVnanopi/build/inc/CMakeFiles/rebuild_cache.dir

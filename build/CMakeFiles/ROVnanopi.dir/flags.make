@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11 -pthread
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/root/ROV/ROVnanopi/inc -I/root/ROV/ROVnanopi/usr/local/include -I/root/ROV/ROVnanopi/usr/include 
+CXX_INCLUDES = -I/home/duan/ROVnanopi/inc -I/home/duan/ROVnanopi/inc/main -I/home/duan/ROVnanopi/usr/local/include -I/home/duan/ROVnanopi/usr/include 
 
