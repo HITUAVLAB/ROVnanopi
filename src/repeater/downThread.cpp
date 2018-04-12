@@ -41,10 +41,12 @@ void DownThread::run(){
             mavlink_status_t status;
             
             for(int i = 0;i < recvLength; i++){
-                //if(mavlink_prase_char(MAVLINK_COMM_O, repeater.getBuf()[i], repeater.getMavlinkMsg(), repeater.getMavlinkStatus() )){
-                                        //printf("\nReceived packet: SYS: %d, COMP: %d, LEN: %d, MSG ID: %d\n", repeater.getMavlinkMsg()->sysid, repeater.getMavlinkMsg()->compid, \
-                                        //                                                                      repeater.getMavlinkMsg()->len,   repeater.getMavlinkMsg()->msgid);
-                //}
+                if(mavlink_parse_char(MAVLINK_COMM_0,repeater.getBuf()[i],repeater.getMavlinkMsg(),repeater.getMavlinkStatus())){
+                    printf("\nReceived packet: SYS: %d, COMP: %d, LEN: %d, MSG ID: %d\n", repeater.getMavlinkMsg()->sysid, repeater.getMavlinkMsg()->compid, \
+                                                                                          repeater.getMavlinkMsg()->len,   repeater.getMavlinkMsg()->msgid);
+
+                }
+
             }
         }
         pthread_mutex_unlock(&mut);        

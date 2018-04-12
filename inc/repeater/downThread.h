@@ -3,7 +3,7 @@
 
 #include"thread.h"
 #include"main.h"
-#include"repeater.h"
+//#include"repeater.h"
 #include<iostream>
 
 class DownThread : public Thread{
