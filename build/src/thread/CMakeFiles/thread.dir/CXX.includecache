@@ -825,8 +825,6 @@ thread.h
 ../inc/repeater/thread.h
 main.h
 ../inc/repeater/main.h
-repeater.h
-../inc/repeater/repeater.h
 iostream
 -
 

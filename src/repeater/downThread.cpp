@@ -42,9 +42,18 @@ void DownThread::run(){
             
             for(int i = 0;i < recvLength; i++){
                 if(mavlink_parse_char(MAVLINK_COMM_0,repeater.getBuf()[i],repeater.getMavlinkMsg(),repeater.getMavlinkStatus())){
+#ifdef DEBUG
                     printf("\nReceived packet: SYS: %d, COMP: %d, LEN: %d, MSG ID: %d\n", repeater.getMavlinkMsg()->sysid, repeater.getMavlinkMsg()->compid, \
                                                                                           repeater.getMavlinkMsg()->len,   repeater.getMavlinkMsg()->msgid);
+#endif
+                    //send mavlink message to mainboard
+                    if(repeater.Write(repeater.getBuf(),repeater.getLength())){
+#ifdef DEBUG
+                        printf("buf write success!\n");
+#endif                        
 
+                    };
+                   
                 }
 
             }
