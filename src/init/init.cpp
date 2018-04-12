@@ -6,7 +6,8 @@ extern Repeater repeater;
 
 int init(void){
 	serialPortInit();
-	startSendingPthread();
+	//startSendingPthread();
+	repeater.networkInit();
 }
 
 int serialPortInit(void){

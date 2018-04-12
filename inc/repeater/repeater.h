@@ -30,6 +30,7 @@
 
 #define MAX_BUF_SIZE 2048
 
+const char* const defaultTargetIP = "192.168.0.103";
 
 class Repeater: public serial
 {
@@ -40,15 +41,33 @@ private:
 	int length;            // length of the msg
         //mavlink_heartbeat_t hb;
 
+	int sock;
+	char target_ip[100];
+
+	ssize_t recsize;
+	socklen_t fromlen;
+	int bytes_sent;
+	unsigned int temp;
+	
+	struct sockaddr_in locAddr,gcAddr;
+
 public:
 	Repeater();
 	~Repeater();
+	
+	//repeater serial port module init
+	int serialInit(void);
+
+	//repeater network module init 
+	int networkInit(void);	
+
 	char* getBuf();
 	void setLength(int length_);
 	int  getLength(void);
 	mavlink_message_t* getMavlinkMsg(void);
 	mavlink_status_t*  getMavlinkStatus(void);
-
+	
+	
 	static void* sendToGS(void *ptr);
 	static void* sendToMB(void *ptr);
 	static void* sendVideo(void *ptr);

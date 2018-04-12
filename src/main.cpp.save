@@ -32,8 +32,7 @@ int main(int argc, char** argv)
 	help(argc,argv);
 
 	/*excute initiation work*/
-	/*open the serial port*/
-	/*initialize network*/
+	/*open the serial por
 	init();
 
     u.startSystem();

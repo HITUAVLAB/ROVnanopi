@@ -1,16 +1,64 @@
 #include "repeater.h"
 
-Repeater::Repeater()
+Repeater::Repeater() 
+	:length(0),
+	 sock(0),
+	 recsize(0),
+	 fromlen(0),
+	 bytes_sent(0),
+	 temp(0)
 {
 	std::cout<<"creating a repeater\n";
 	memset(buf,0,sizeof(buf));
-	length = 0;
 }
 
 Repeater::~Repeater()
 {
 	
 	
+}
+
+int Repeater::serialInit(void){
+	
+}
+
+int Repeater::networkInit(void){
+	sock = socket(PF_INET,SOCK_DGRAM,IPPROTO_UDP);
+	strcpy(target_ip,defaultTargetIP);
+	
+	memset(&gcAddr, 0, sizeof(gcAddr));
+        gcAddr.sin_family = AF_INET;
+        gcAddr.sin_addr.s_addr = inet_addr(target_ip);
+	gcAddr.sin_port = htons(14550);
+	
+	memset(&locAddr, 0, sizeof(locAddr));
+	locAddr.sin_family = AF_INET; 
+	locAddr.sin_addr.s_addr = INADDR_ANY; 
+	locAddr.sin_port = htons(14551); 
+	
+	if (-1 == bind(sock,(struct sockaddr *)&locAddr, sizeof(struct sockaddr)))
+        {
+                perror("error bind failed");
+                close(sock);
+                exit(EXIT_FAILURE);
+        }
+        else{
+                printf("bind success\n");
+        }
+	
+#if (defined __QNX__) | (defined __QNXNTO__)
+        if (fcntl(sock, F_SETFL, O_NONBLOCK | FASYNC) < 0)
+#else
+        if (fcntl(sock, F_SETFL, O_NONBLOCK | O_ASYNC) < 0)
+#endif
+
+        {
+                fprintf(stderr, "error setting nonblocking: %s\n", strerror(errno));
+                close(sock);
+                exit(EXIT_FAILURE);
+        }
+
+
 }
 
 char* Repeater::getBuf()
