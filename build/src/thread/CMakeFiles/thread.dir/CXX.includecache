@@ -823,6 +823,10 @@ mavlink_helpers.h
 ../inc/repeater/downThread.h
 thread.h
 ../inc/repeater/thread.h
+main.h
+../inc/repeater/main.h
+repeater.h
+../inc/repeater/repeater.h
 iostream
 -
 

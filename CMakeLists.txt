@@ -7,6 +7,9 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 project(ROVnanopi CXX)
 
+#Add OpenCV library
+find_package( OpenCV REQUIRED)
+
 #set(CMAKE_BUILD_TYPE "Release")
 set(CMAKE_BUILD_TYPE "Debug")
 
@@ -41,4 +44,5 @@ link_libraries (thread comm videostream repeater init)
 add_executable(${PROJECT_NAME} ${DIR_SRCS} )
 
 target_link_libraries (ROVnanopi ${CMAKE_THREAD_LIBS_INIT})
-target_link_libraries (ROVnanopi thread comm videostream repeater init)
+target_link_libraries (ROVnanopi thread videostream comm repeater init)
+target_link_libraries (ROVnanopi ${OpenCV_LIBS})

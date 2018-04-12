@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+../inc/comm/PracticalSocket.h
+cstdlib
+-
+exception
+-
+string
+-
+
 ../inc/comm/serial.h
 stdint.h
 -
@@ -815,6 +823,10 @@ mavlink_helpers.h
 ../inc/repeater/downThread.h
 thread.h
 ../inc/repeater/thread.h
+main.h
+../inc/repeater/main.h
+repeater.h
+../inc/repeater/repeater.h
 iostream
 -
 
@@ -877,14 +889,28 @@ pthread.h
 -
 
 ../inc/videostream/cameraThread.h
+PracticalSocket.h
+../inc/videostream/PracticalSocket.h
+repeater.h
+../inc/videostream/repeater.h
 thread.h
 ../inc/videostream/thread.h
 iostream
 -
+cstdlib
+-
+opencv2/opencv.hpp
+../inc/videostream/opencv2/opencv.hpp
+config.h
+../inc/videostream/config.h
+
+../inc/videostream/config.h
 
 /root/ROV/ROVnanopi/src/repeater/downThread.cpp
 downThread.h
 /root/ROV/ROVnanopi/src/repeater/downThread.h
+mavlink.h
+/root/ROV/ROVnanopi/src/repeater/mavlink.h
 
 /root/ROV/ROVnanopi/src/repeater/repeater.cpp
 repeater.h

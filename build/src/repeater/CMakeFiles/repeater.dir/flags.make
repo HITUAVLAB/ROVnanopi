@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11 -pthread -g
 
 CXX_DEFINES = -DDEBUG
 
-CXX_INCLUDES = -I/root/ROV/ROVnanopi/inc -I/root/ROV/ROVnanopi/inc/main -I/root/ROV/ROVnanopi/inc/thread -I/root/ROV/ROVnanopi/inc/repeater -I/root/ROV/ROVnanopi/inc/videostream -I/root/ROV/ROVnanopi/inc/comm -I/root/ROV/ROVnanopi/inc/projectdebug -I/root/ROV/ROVnanopi/inc/mavlink/ROV -I/root/ROV/ROVnanopi/usr/local/include -I/root/ROV/ROVnanopi/usr/include 
+CXX_INCLUDES = -I/usr/include/opencv -I/root/ROV/ROVnanopi/inc -I/root/ROV/ROVnanopi/inc/main -I/root/ROV/ROVnanopi/inc/thread -I/root/ROV/ROVnanopi/inc/repeater -I/root/ROV/ROVnanopi/inc/videostream -I/root/ROV/ROVnanopi/inc/comm -I/root/ROV/ROVnanopi/inc/projectdebug -I/root/ROV/ROVnanopi/inc/mavlink/ROV -I/root/ROV/ROVnanopi/usr/local/include -I/root/ROV/ROVnanopi/usr/include 
 

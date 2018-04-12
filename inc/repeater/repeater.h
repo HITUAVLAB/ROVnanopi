@@ -30,8 +30,17 @@
 
 #define MAX_BUF_SIZE 2048
 
-const char* const defaultTargetIP = "192.168.0.103";
+//some constand of network connection or serial port 
+const char* const defaultTargetIP = "192.168.0.103";   //Ip address of groundstation
+const char* const defaultCameraPort = "4444";
+const int defaultGSPort = 14551;
+const int defaultRepeaterPort = 14550;
+const char* const defaultSerialPort = "/dev/ttyS1";    //Serial port of mainboard
 
+
+
+//here we made a mistake, the repeater and serial port is not is a relation ship, so it's not fit to
+//inherit the serial class
 class Repeater: public serial
 {
 private:
@@ -60,13 +69,16 @@ public:
 
 	//repeater network module init 
 	int networkInit(void);	
-
+        
 	char* getBuf();
 	void setLength(int length_);
 	int  getLength(void);
 	mavlink_message_t* getMavlinkMsg(void);
 	mavlink_status_t*  getMavlinkStatus(void);
 	
+        //send the buf through UDP
+        int sendBuf(void);
+        int receiveBuf(void);
 	
 	static void* sendToGS(void *ptr);
 	static void* sendToMB(void *ptr);
