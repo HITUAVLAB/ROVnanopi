@@ -15,11 +15,19 @@ Repeater::Repeater()
 Repeater::~Repeater()
 {
 	
-	
 }
 
 int Repeater::serialInit(void){
-	
+    int ret = 0;
+    ret = Open(defaultSerialPort,115200,8,NO,1);
+    if(ret == 0){
+        printf("open serial error!\n");
+        return 0;   
+    }		
+    else{
+        printf("open serial success!\n");
+        return 1;
+    }
 }
 
 int Repeater::networkInit(void){
@@ -74,6 +82,8 @@ int Repeater::getLength(void){
 	return length;
 }
 
+
+
 mavlink_message_t* Repeater::getMavlinkMsg(void){
 	mavlink_message_t* p;
 	p = &(this->msg);
@@ -84,6 +94,16 @@ mavlink_status_t* Repeater::getMavlinkStatus(void){
 	mavlink_status_t* p;
 	p = &(this->status);
 	return p;
+}
+
+//send buf through network,using UDP protocol
+int Repeater::sendBuf(void){
+    sendto(sock,buf,length,0,(struct sockaddr*)&gcAddr,sizeof(struct sockaddr_in));
+}
+
+int Repeater::receiveBuf(void){
+    recsize = recvfrom(sock,(void *)buf,MAX_BUF_SIZE,0,(struct sockaddr *)&gcAddr,&fromlen);
+    return recsize;
 }
 
 /*

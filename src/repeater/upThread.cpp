@@ -48,7 +48,9 @@ void UpThread::run(){
 #endif            
             if (mavlink_parse_char(MAVLINK_COMM_0, repeater.getBuf()[i], repeater.getMavlinkMsg(), repeater.getMavlinkStatus() )){
                 //bytes_sent = sendto(sock, repeater.getBuf(), repeater.getLength(), 0, (struct sockaddr*)&gcAddr, sizeof(struct sockaddr_in));
+                repeater.sendBuf();
 #ifdef DEBUG                
+                
                 printf("mavlink message received\n");
                 printf("the message ID is: %d\n",repeater.getMavlinkMsg()->msgid);
 #endif
