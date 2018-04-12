@@ -22,8 +22,9 @@ void CameraThread::run(){
     std::cout << "Starting the camera thread" << std::endl;
 
     while (keepRunning) {
-        sleep(1000);
+#ifdef DEBUG
         std::cout << "Running the camera thread" << std::endl;
+#endif    
     }
 
 
