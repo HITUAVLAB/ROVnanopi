@@ -28,7 +28,7 @@ void UpThread::run(){
     int bytes_sent;
 
     CameraThread c;
-    c.startSystem();
+    //c.startSystem();
 
     while (keepRunning) {
 #ifdef DEBUG
@@ -68,6 +68,6 @@ void UpThread::run(){
 
     }
 
-    c.stopSystem();
+    //c.stopSystem();
     std::cout << "Exiting uploading thread" << std::endl;
 }
