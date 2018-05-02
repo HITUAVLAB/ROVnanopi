@@ -194,5 +194,7 @@ src/thread/CMakeFiles/thread.dir/threadControl.cpp.o: ../inc/repeater/upThread.h
 src/thread/CMakeFiles/thread.dir/threadControl.cpp.o: ../inc/thread/runnable.h
 src/thread/CMakeFiles/thread.dir/threadControl.cpp.o: ../inc/thread/thread.h
 src/thread/CMakeFiles/thread.dir/threadControl.cpp.o: ../inc/thread/threadControl.h
+src/thread/CMakeFiles/thread.dir/threadControl.cpp.o: ../inc/videostream/cameraThread.h
+src/thread/CMakeFiles/thread.dir/threadControl.cpp.o: ../inc/videostream/config.h
 src/thread/CMakeFiles/thread.dir/threadControl.cpp.o: ../src/thread/threadControl.cpp
 

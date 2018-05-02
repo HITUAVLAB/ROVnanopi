@@ -87,6 +87,8 @@ upThread.h
 ../inc/main/upThread.h
 downThread.h
 ../inc/main/downThread.h
+cameraThread.h
+../inc/main/cameraThread.h
 
 ../inc/mavlink/ROV/./mavlink_msg_joystick_control.h
 
@@ -885,6 +887,24 @@ runnable.h
 ../inc/thread/threadControl.h
 pthread.h
 -
+
+../inc/videostream/cameraThread.h
+PracticalSocket.h
+../inc/videostream/PracticalSocket.h
+repeater.h
+../inc/videostream/repeater.h
+thread.h
+../inc/videostream/thread.h
+iostream
+-
+cstdlib
+-
+opencv2/opencv.hpp
+../inc/videostream/opencv2/opencv.hpp
+config.h
+../inc/videostream/config.h
+
+../inc/videostream/config.h
 
 /root/ROV/ROVnanopi/src/thread/thread.cpp
 time.h

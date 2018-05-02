@@ -87,6 +87,8 @@ upThread.h
 ../inc/main/upThread.h
 downThread.h
 ../inc/main/downThread.h
+cameraThread.h
+../inc/main/cameraThread.h
 
 ../inc/mavlink/ROV/./mavlink_msg_joystick_control.h
 

@@ -40,5 +40,6 @@ extern pthread_mutex_t mut;
 /*local include files*/
 #include "upThread.h"
 #include "downThread.h"
+#include "cameraThread.h"
 
 #endif

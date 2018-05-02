@@ -3,6 +3,7 @@
 
 src/init/CMakeFiles/init.dir/help.cpp.o: ../src/init/help.cpp
 
+src/init/CMakeFiles/init.dir/init.cpp.o: ../inc/comm/PracticalSocket.h
 src/init/CMakeFiles/init.dir/init.cpp.o: ../inc/comm/serial.h
 src/init/CMakeFiles/init.dir/init.cpp.o: ../inc/main/help.h
 src/init/CMakeFiles/init.dir/init.cpp.o: ../inc/main/init.h
@@ -191,5 +192,7 @@ src/init/CMakeFiles/init.dir/init.cpp.o: ../inc/repeater/upThread.h
 src/init/CMakeFiles/init.dir/init.cpp.o: ../inc/thread/runnable.h
 src/init/CMakeFiles/init.dir/init.cpp.o: ../inc/thread/thread.h
 src/init/CMakeFiles/init.dir/init.cpp.o: ../inc/thread/threadControl.h
+src/init/CMakeFiles/init.dir/init.cpp.o: ../inc/videostream/cameraThread.h
+src/init/CMakeFiles/init.dir/init.cpp.o: ../inc/videostream/config.h
 src/init/CMakeFiles/init.dir/init.cpp.o: ../src/init/init.cpp
 

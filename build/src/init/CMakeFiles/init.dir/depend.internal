@@ -4,6 +4,7 @@
 src/init/CMakeFiles/init.dir/help.cpp.o
  /root/ROV/ROVnanopi/src/init/help.cpp
 src/init/CMakeFiles/init.dir/init.cpp.o
+ ../inc/comm/PracticalSocket.h
  ../inc/comm/serial.h
  ../inc/main/help.h
  ../inc/main/init.h
@@ -192,4 +193,6 @@ src/init/CMakeFiles/init.dir/init.cpp.o
  ../inc/thread/runnable.h
  ../inc/thread/thread.h
  ../inc/thread/threadControl.h
+ ../inc/videostream/cameraThread.h
+ ../inc/videostream/config.h
  /root/ROV/ROVnanopi/src/init/init.cpp
