@@ -8,7 +8,9 @@ DownThread::DownThread(void){
 }
 
 DownThread::~DownThread(void){
+#ifdef DOWNTHREADDEBUG
     std::cout << "Destructing the uploading object and free the memory" << std::endl;
+#endif
 }
 
 void DownThread::startSystem(){
@@ -23,7 +25,7 @@ void DownThread::stopSystem(){
 
 void DownThread::run(){
     ssize_t recvLength; 
-#ifdef DEBUG
+#ifdef DOWNTHREADDEBUG
     std::cout << "Starting the downloading thread" << std::endl;
 #endif
 
@@ -33,25 +35,25 @@ void DownThread::run(){
         pthread_mutex_lock(&mut);
         recvLength = repeater.receiveBuf();
         if(recvLength > 0){
-#ifdef DEBUG
+#ifdef DOWNTHREADDEBUG
             printf("received buf from ground station\n");
 #endif
             //send received message to main board through serial port
             mavlink_message_t msg;
             mavlink_status_t status;
-#ifdef DEBUG
+#ifdef DOWNTHREADDEBUG
             std::cout << "received buf is: " << recvLength << std::endl;
 #endif
             for(int i = 0;i < recvLength; i++){
                 if(mavlink_parse_char(MAVLINK_COMM_0,repeater.getBuf()[i],repeater.getMavlinkMsg(),repeater.getMavlinkStatus())){
-#ifdef DEBUG
+#ifdef DOWNTHREADDEBUG
                     printf("\nReceived packet: SYS: %d, COMP: %d, LEN: %d, MSG ID: %d\n", repeater.getMavlinkMsg()->sysid, repeater.getMavlinkMsg()->compid, \
                                                                                           repeater.getMavlinkMsg()->len,   repeater.getMavlinkMsg()->msgid);
                     
 #endif
                     //send mavlink message to mainboard
                     if(repeater.Write(repeater.getBuf(),recvLength)){
-#ifdef DEBUG
+#ifdef DOWNTHREADDEBUG
                         printf("buf write success!\n");
 #endif                        
 

@@ -12,6 +12,8 @@
 #include "opencv2/opencv.hpp"
 #include "config.h"
 
+#include "projectdebug.h"
+
 using namespace std;
 using namespace cv;
 

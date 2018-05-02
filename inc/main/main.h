@@ -42,4 +42,6 @@ extern pthread_mutex_t mut;
 #include "downThread.h"
 #include "cameraThread.h"
 
+#include "projectdebug.h"
+
 #endif

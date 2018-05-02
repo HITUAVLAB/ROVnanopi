@@ -23,7 +23,10 @@ void CameraThread::stopSystem(){
  *  Run the video stream collecting and sending pthread
  */
 void CameraThread::run(){
+#ifdef CAMERADEBUG
     std::cout << "Starting the camera thread" << std::endl;
+#endif
+
     string servAddress(defaultTargetIP);
     unsigned short servPort = Socket::resolveService(defaultCameraPort,"udp");
     try{
@@ -39,7 +42,7 @@ void CameraThread::run(){
         }
         clock_t last_cycle = clock();
         while (keepRunning) {
-#ifdef DEBUG
+#ifdef CAMERADEBUG
             //std::cout << "Running the camera thread" << std::endl;
 #endif     
             cap >> frame;
@@ -64,9 +67,12 @@ void CameraThread::run(){
 
             clock_t next_cycle = clock();
             double duration = (next_cycle - last_cycle) / (double) CLOCKS_PER_SEC;
+
+#ifdef CAMERADEBUG
             cout << "\teffective FPS:" << (1 / duration) << " \tkbps:" << (PACK_SIZE * total_pack / duration / 1024 * 8) << endl;
-            
             cout << next_cycle - last_cycle;
+
+#endif
             last_cycle = next_cycle;
         
         }    
@@ -75,7 +81,8 @@ void CameraThread::run(){
         exit(1);
     }
 
-
+#ifdef CAMERADEBUG
     std::cout << "Exiting camera thread" << std::endl;
+#endif
 
 }
