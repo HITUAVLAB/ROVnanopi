@@ -184,6 +184,7 @@ CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/mavlink/mavlink_helpers.h
 CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/mavlink/mavlink_sha256.h
 CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/mavlink/mavlink_types.h
 CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/mavlink/protocol.h
+CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/projectdebug/projectdebug.h
 CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/repeater/downThread.h
 CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/repeater/repeater.h
 CMakeFiles/ROVnanopi.dir/src/main.cpp.o: ../inc/repeater/upThread.h

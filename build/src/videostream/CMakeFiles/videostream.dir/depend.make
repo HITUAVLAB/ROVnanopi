@@ -181,6 +181,7 @@ src/videostream/CMakeFiles/videostream.dir/cameraThread.cpp.o: ../inc/mavlink/ma
 src/videostream/CMakeFiles/videostream.dir/cameraThread.cpp.o: ../inc/mavlink/mavlink_sha256.h
 src/videostream/CMakeFiles/videostream.dir/cameraThread.cpp.o: ../inc/mavlink/mavlink_types.h
 src/videostream/CMakeFiles/videostream.dir/cameraThread.cpp.o: ../inc/mavlink/protocol.h
+src/videostream/CMakeFiles/videostream.dir/cameraThread.cpp.o: ../inc/projectdebug/projectdebug.h
 src/videostream/CMakeFiles/videostream.dir/cameraThread.cpp.o: ../inc/repeater/repeater.h
 src/videostream/CMakeFiles/videostream.dir/cameraThread.cpp.o: ../inc/thread/runnable.h
 src/videostream/CMakeFiles/videostream.dir/cameraThread.cpp.o: ../inc/thread/thread.h

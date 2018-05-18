@@ -30,7 +30,8 @@ void DownThread::run(){
 #endif
 
     while (keepRunning) {
-        //sleep(1000);
+        //printf("running\n");
+        usleep(1000);
         //std::cout << "Running the downloading thread" << std::endl;
         pthread_mutex_lock(&mut);
         recvLength = repeater.receiveBuf();

@@ -188,6 +188,7 @@ src/thread/CMakeFiles/thread.dir/threadControl.cpp.o: ../inc/mavlink/mavlink_hel
 src/thread/CMakeFiles/thread.dir/threadControl.cpp.o: ../inc/mavlink/mavlink_sha256.h
 src/thread/CMakeFiles/thread.dir/threadControl.cpp.o: ../inc/mavlink/mavlink_types.h
 src/thread/CMakeFiles/thread.dir/threadControl.cpp.o: ../inc/mavlink/protocol.h
+src/thread/CMakeFiles/thread.dir/threadControl.cpp.o: ../inc/projectdebug/projectdebug.h
 src/thread/CMakeFiles/thread.dir/threadControl.cpp.o: ../inc/repeater/downThread.h
 src/thread/CMakeFiles/thread.dir/threadControl.cpp.o: ../inc/repeater/repeater.h
 src/thread/CMakeFiles/thread.dir/threadControl.cpp.o: ../inc/repeater/upThread.h

@@ -187,6 +187,7 @@ src/init/CMakeFiles/init.dir/init.cpp.o
  ../inc/mavlink/mavlink_sha256.h
  ../inc/mavlink/mavlink_types.h
  ../inc/mavlink/protocol.h
+ ../inc/projectdebug/projectdebug.h
  ../inc/repeater/downThread.h
  ../inc/repeater/repeater.h
  ../inc/repeater/upThread.h

@@ -185,6 +185,7 @@ src/repeater/CMakeFiles/repeater.dir/downThread.cpp.o
  ../inc/mavlink/mavlink_sha256.h
  ../inc/mavlink/mavlink_types.h
  ../inc/mavlink/protocol.h
+ ../inc/projectdebug/projectdebug.h
  ../inc/repeater/downThread.h
  ../inc/repeater/repeater.h
  ../inc/repeater/upThread.h
@@ -560,6 +561,7 @@ src/repeater/CMakeFiles/repeater.dir/upThread.cpp.o
  ../inc/mavlink/mavlink_sha256.h
  ../inc/mavlink/mavlink_types.h
  ../inc/mavlink/protocol.h
+ ../inc/projectdebug/projectdebug.h
  ../inc/repeater/downThread.h
  ../inc/repeater/repeater.h
  ../inc/repeater/upThread.h

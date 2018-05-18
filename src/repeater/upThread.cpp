@@ -26,10 +26,10 @@ void UpThread::run(){
     std::cout << "Starting the uploading thread" << std::endl;
 #endif
     int bytes_sent;
-
-    CameraThread c;
+    
+    //CameraThread c;
     //c.startSystem();
-
+    
     while (keepRunning) {
 #ifdef UPTHREADDEBUG
         //sleep(1000);
@@ -39,6 +39,7 @@ void UpThread::run(){
 #ifdef UPTHREADDEBUG
         //printf("Start reading\n");
 #endif
+	//usleep(10000);
         repeater.setLength( repeater.Read(repeater.getBuf()) );     //length is the byte the uart read
         if(repeater.getLength()){                                   //buf is not empty
             for(int i = 0; i < repeater.getLength(); i++){

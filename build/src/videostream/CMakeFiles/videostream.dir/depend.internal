@@ -182,6 +182,7 @@ src/videostream/CMakeFiles/videostream.dir/cameraThread.cpp.o
  ../inc/mavlink/mavlink_sha256.h
  ../inc/mavlink/mavlink_types.h
  ../inc/mavlink/protocol.h
+ ../inc/projectdebug/projectdebug.h
  ../inc/repeater/repeater.h
  ../inc/thread/runnable.h
  ../inc/thread/thread.h

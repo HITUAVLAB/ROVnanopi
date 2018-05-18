@@ -764,6 +764,8 @@ mavlink_types.h
 mavlink_helpers.h
 ../inc/mavlink/mavlink_helpers.h
 
+../inc/projectdebug/projectdebug.h
+
 ../inc/repeater/repeater.h
 iostream
 -
@@ -825,6 +827,8 @@ opencv2/opencv.hpp
 ../inc/videostream/opencv2/opencv.hpp
 config.h
 ../inc/videostream/config.h
+projectdebug.h
+../inc/videostream/projectdebug.h
 
 ../inc/videostream/config.h
 

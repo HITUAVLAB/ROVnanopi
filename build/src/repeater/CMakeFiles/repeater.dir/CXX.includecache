@@ -89,6 +89,8 @@ downThread.h
 ../inc/main/downThread.h
 cameraThread.h
 ../inc/main/cameraThread.h
+projectdebug.h
+../inc/main/projectdebug.h
 
 ../inc/mavlink/ROV/./mavlink_msg_joystick_control.h
 
@@ -822,6 +824,8 @@ mavlink_types.h
 mavlink_helpers.h
 ../inc/mavlink/mavlink_helpers.h
 
+../inc/projectdebug/projectdebug.h
+
 ../inc/repeater/downThread.h
 thread.h
 ../inc/repeater/thread.h
@@ -903,6 +907,8 @@ opencv2/opencv.hpp
 ../inc/videostream/opencv2/opencv.hpp
 config.h
 ../inc/videostream/config.h
+projectdebug.h
+../inc/videostream/projectdebug.h
 
 ../inc/videostream/config.h
 

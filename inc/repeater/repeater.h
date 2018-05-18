@@ -31,7 +31,7 @@
 #define MAX_BUF_SIZE 2048
 
 //some constand of network connection or serial port 
-const char* const defaultTargetIP = "192.168.0.123";   //Ip address of groundstation
+const char* const defaultTargetIP = "192.168.0.129";   //Ip address of groundstation
 const char* const defaultCameraPort = "4444";
 const int defaultGSPort = 14551;
 const int defaultRepeaterPort = 14550;

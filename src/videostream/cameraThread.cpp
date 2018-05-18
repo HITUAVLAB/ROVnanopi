@@ -33,6 +33,7 @@ void CameraThread::run(){
         UDPSocket sock;
         int jpegqual =  ENCODE_QUALITY; // Compression Parameter
 
+	
         Mat frame, send;
         vector < uchar > encoded;
         VideoCapture cap(0); // Grab the camera
@@ -44,7 +45,8 @@ void CameraThread::run(){
         while (keepRunning) {
 #ifdef CAMERADEBUG
             //std::cout << "Running the camera thread" << std::endl;
-#endif     
+#endif  
+            usleep(50000);
             cap >> frame;
             if(frame.size().width==0)continue;//simple integrity check; skip erroneous data...
             resize(frame, send, Size(FRAME_WIDTH, FRAME_HEIGHT), 0, 0, INTER_LINEAR);

@@ -27,7 +27,7 @@ int main(int argc, char** argv)
 
     UpThread u;
     DownThread d;
-    CameraThread c;
+    //CameraThread c;
 
 	/*print help information*/
 	help(argc,argv);
@@ -39,16 +39,16 @@ int main(int argc, char** argv)
 
     u.startSystem();
     d.startSystem();
-    c.startSystem();
+    //c.startSystem();
 
     while(keepRunning)
     {
         std::cout <<"running"<<std::endl;
-        sleep(1);
+        sleep(1000);
     }
     std::cout << "end the program" << std::endl;
     
-    c.stopSystem();
+    //c.stopSystem();
     u.stopSystem();
     d.stopSystem();
 	//repeater.Close();
