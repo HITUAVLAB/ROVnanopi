@@ -9,6 +9,8 @@
 #include "init.h"         //init function for the nanopi
 #include "threadControl.h"      //pthread operation
 #include "help.h"
+#include "stateMachine.h"
+
 extern Repeater repeater;
 extern pthread_mutex_t mut;
 

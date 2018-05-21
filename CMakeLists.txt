@@ -28,6 +28,7 @@ INCLUDE_DIRECTORIES(
     inc/videostream
     inc/comm
     inc/projectdebug
+    inc/statemachine
 
     #mavlink include directory
     inc/mavlink/ROV

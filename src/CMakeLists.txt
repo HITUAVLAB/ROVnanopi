@@ -8,5 +8,5 @@ add_subdirectory(comm)
 add_subdirectory(thread)
 add_subdirectory(videostream)
 add_subdirectory(repeater)
-
+add_subdirectory(statemachine)
 
