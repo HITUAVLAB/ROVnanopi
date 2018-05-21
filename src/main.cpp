@@ -24,6 +24,12 @@ int main(int argc, char** argv)
     std::cout << "Starting the ROV groundstation, this is the debug release" << std::endl;
 #endif
     signal( SIGINT, sig_handler );
+    // Check if --help flag was used
+
+    if(argc == 2){
+        repeater.setUserDefinedIP(argv[1]);
+
+    }
 
     UpThread u;
     DownThread d;

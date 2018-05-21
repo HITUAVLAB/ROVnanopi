@@ -59,6 +59,7 @@ private:
 	unsigned int temp;
 	
 	struct sockaddr_in locAddr,gcAddr;
+    bool isUserDefined;
 
 public:
 	Repeater();
@@ -69,6 +70,9 @@ public:
 
 	//repeater network module init 
 	int networkInit(void);	
+
+    //set ground station IP
+    int setUserDefinedIP(const char*);
         
 	char* getBuf();
 	void setLength(int length_);

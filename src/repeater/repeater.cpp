@@ -6,7 +6,8 @@ Repeater::Repeater()
 	 recsize(0),
 	 fromlen(0),
 	 bytes_sent(0),
-	 temp(0)
+     temp(0),
+     isUserDefined(false)
 {
 	std::cout<<"creating a repeater\n";
 	memset(buf,0,sizeof(buf));
@@ -32,7 +33,8 @@ int Repeater::serialInit(void){
 
 int Repeater::networkInit(void){
 	sock = socket(PF_INET,SOCK_DGRAM,IPPROTO_UDP);
-	strcpy(target_ip,defaultTargetIP);
+    if(isUserDefined);                    //use user defined IP
+    else strcpy(target_ip,defaultTargetIP);
 	
 	memset(&gcAddr, 0, sizeof(gcAddr));
         gcAddr.sin_family = AF_INET;
@@ -67,6 +69,12 @@ int Repeater::networkInit(void){
         }
 
 
+}
+
+int Repeater::setUserDefinedIP(const char *UserDefinedIP){
+    strncpy(target_ip,UserDefinedIP,sizeof(target_ip));
+    isUserDefined = true;
+    return 0;
 }
 
 char* Repeater::getBuf()
